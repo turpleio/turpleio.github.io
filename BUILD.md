@@ -28,3 +28,15 @@ $ cd ./docusaurus/website
 $ yarn
 $ ./build.sh
 ```
+
+#### How to run in localhost
+
+* Use empty url in `siteConfig.js`
+```
+const siteConfig = {
+  url: ''
+}
+```
+* Run
+```
+$ npm start
