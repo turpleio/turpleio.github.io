@@ -1,0 +1,290 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Turple - Cloud Native Platform
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        //- link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        //- link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top')
+                    img(src='assets/img/navbar-logo.svg', alt='')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars.ml-1
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#turple') Turple
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Cloud Platform
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#edge') 5G
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#codeless') Codeless
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contacts') Contacts
+        // Masthead
+        header.masthead
+            .container
+                .masthead-subheading The real cloud native platform
+                .masthead-heading.text-uppercase TURPLE
+
+        // turple
+        section#turple.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase What is Turple?
+                .row
+                    .col-lg-6.mx-auto.text-center
+                        h3.section-subheading.text-muted
+                            | Turple is an optimized, integrated cloud native software platform for developing and operating cloud native applications. 
+
+        // turple
+        section#turple.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Why Turple?
+                    h3.section-subheading.text-muted Turple makes your service agile, scalable and stopless
+                .row.text-center
+                    .col-md-4
+                        img.img-fluid(src='assets/img/why/01-why.png', alt='')
+
+                        h4.my-3 Agile
+                        p.text-muted.text-center
+                            | The cloud native applications should be agile to respond quickly to whatever happens. In development, deployment and operation application agility is one of the most important matters in cloud native environment.
+                    .col-md-4
+                        img.img-fluid(src='assets/img/why/02-why.png', alt='')
+
+                        h4.my-3 Scalabe
+                        p.text-muted.text-center
+                            | One of the important elements required by cloud native environment is scalability. The service should be able to scale in/out by various reasons. If a service application is a Docker container type, Turple can handle all from VM instances to service deployment as needed.
+                    .col-md-4
+                        img.img-fluid(src='assets/img/why/03-why.png', alt='')
+
+                        h4.my-3 Stopless
+                        p.text-muted.text-center
+                            | Turple's monitoring system keeps checking the status of VM instances and service applications. Engineers can recongnize and resolve issues before the service stops. Even in the worst case Turple's DR(Disaster Recovery) process can resume the service very quickly.
+
+        // portfolio
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Cloud Native Platform
+                    h3.section-subheading.text-muted Turple provides everything required by cloud native environment 
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            img.img-fluid(src='assets/img/portfolio/01-thumbnail.png', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading.my-3 High Availability
+                                .portfolio-caption-subheading.text-center.text-muted Services of cloud native application must be stopless. The clustring architecture and monitoring system of Turple makes the services fault-tolerant and realiable. 
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            img.img-fluid(src='assets/img/portfolio/02-thumbnail.png', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading.my-3 Orchestration
+                                .portfolio-caption-subheading.text-center.text-muted A cloud native system contains many containers and resource. Turple manages and controls everything with health-checking, service discovery, monitoring, alerting and so on.
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            img.img-fluid(src='assets/img/portfolio/03-thumbnail.png', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading.my-3 DevOps
+                                .portfolio-caption-subheading.text-center.text-muted DevOps is necessary to make a true cloud native service. When Turple receives a push notification from Github, the updated code is built and the new created container is automatically deployed to designated instances by Turple's CI/CD process.
+                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                        .portfolio-item
+                            img.img-fluid(src='assets/img/portfolio/04-thumbnail.png', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading.my-3 Autoscale
+                                .portfolio-caption-subheading.text-center.text-muted VM instances are controlled by Turple and can be scaled in/out as required. An engineer can do the job manually by executing simple commands. However the monitoring system can also perform the scaling tasks automatically.
+                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                        .portfolio-item
+                            img.img-fluid(src='assets/img/portfolio/05-thumbnail.png', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading.my-3 Monitoring & Logging
+                                .portfolio-caption-subheading.text-center.text-muted The monitoring system keeps tracks of all instances and services. The system alerts engineers when detecting abnormal conditions. All logging data are collected by ELK for system analysis.
+                    .col-lg-4.col-sm-6
+                        .portfolio-item
+                            img.img-fluid(src='assets/img/portfolio/06-thumbnail.png', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading.my-3 Heterogeneous
+                                .portfolio-caption-subheading.text-center.text-muted The cloud native applications must run in all cloud environments. With Turple the application can be deployed and run in the same way wherever it is. AWS, Azure, OpenStack, Google Cloud, Naver and more are supported by Turple.
+
+        // edge
+        section#edge.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase 5G
+                    h3.section-subheading.text-muted IoT, Digital Twin and Edge
+                ul.timeline
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/edge/01-edge.png', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 IoT
+                                //- h4.subheading The only thing you need to do
+                            .timeline-body
+                                p.text-muted
+                                    | Turple's IoT module supports MQTT protocol and its capacity is very large. The IoT module can be scable on Turple and respond to a number of devices.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/edge/02-edge.png', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 Digital Twin
+                                //- h4.subheading The applicatoin is built and deplyed by Turple
+                            .timeline-body
+                                p.text-muted
+                                    | Digital Twin requires high performance in data collection and processing. Turple supports a time series database as well as the IoT module, and has already started working with an EV company.
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/edge/03-edge.png', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 Edge
+                                //- h4.subheading Transition to Full Service
+                            .timeline-body
+                                p.text-muted
+                                    | It's not possible to provide 5G services without Edge technologies. Turple is preparing to support Edge service and it's coming soon.
+                    
+                    li.timeline-inverted
+                        .timeline-image
+                            h4
+                                | Future
+                                br
+                                | with
+                                br
+                                | Turple!
+
+        // codeless
+        section#codeless.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Codeless
+                    h3.section-subheading.text-muted Turple's command set is simple but powerful!
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/01-team.png', alt='')
+                            h4.my-3 Configuration
+                            p.text-muted.text-center The service configurations can be defined in a file, such as service names, the number of VM, clustering size and so on. Engineers don't have to struggle with many files for setup.
+
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/02-team.png', alt='')
+                            h4.my-3 Run Command
+                            p.text-muted.text-center Many configuration-based operations can be executed by simple commands instead of coding, including deployment, creation and initialization of VMs, scaling in and out.
+
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/03-team.png', alt='')
+                            h4.my-3 Better Service
+                            p.text-muted.text-center Turple frees engineers from from infrastructure and service health management. Engineer need to focus on development and operation for better service.
+  
+                .row.pt-5
+                    .col-lg-8.mx-auto.text-center
+                        p.large.text-muted
+                            | The following example shows how simple Turple's commands are. With a single command ten VM instances are created and initialized to provide services. 
+
+                        script#asciicast-fx5YPUOAIAs7NrvmkVqoUVTw9(src='https://asciinema.org/a/fx5YPUOAIAs7NrvmkVqoUVTw9.js' async='')
+
+
+        // Clients
+        section.page-section.py-5
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Who is using Turple
+                    h3.section-subheading.text-muted  Proven in market
+                .row
+                    .col-md-2
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/pentasecurity.png', alt='')
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/humax.png', alt='')
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/autocrypt.png', alt='')
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/carplat.png', alt='')
+                    .col-md-2
+                .row
+                    .col-md-2
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/pmgrow.png', alt='')
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/gitple.png', alt='')
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/m2cloud.png', alt='')
+                    .col-md-2.col-sm-2.my-4
+                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/polestar.png', alt='')
+                    .col-md-2
+       
+        // Footer
+        footer#contacts.footer.py-5
+            .container
+                .row.align-items-center.py-4
+                    .col-lg-4.text-lg-left
+                        h4 Contacts
+                        | 18th fl., 382 Gangnam-daero, Gangnam-gu,
+                        br
+                        | Seoul, South Korea
+                        br
+                        br
+                        a.link(href='mailto:contact@gitple.com') contact@gitple.com
+                        br
+                        a.link(href='https://gitple.io') gitple.io
+                    .col-lg-6.text-lg-left
+                    .col-lg-2.text-lg-right
+                        img.img-fluid(src='assets/img/aws.png', alt='')
+
+                .row.align-items-center.py-3
+                    .col-lg-4.text-lg-left
+                        | Copyright © Gitple 2017                        
+ 
+                    //- .col-lg-4.my-3.my-lg-0
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-twitter
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-facebook-f
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-linkedin-in
+                    //- .col-lg-4.text-lg-right
+                    //-     a.mr-3(href='#!') Privacy Policy
+                    //-     a(href='#!') Terms of Use
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Contact form JS
+        script(src='assets/mail/jqBootstrapValidation.js')
+        script(src='assets/mail/contact_me.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        

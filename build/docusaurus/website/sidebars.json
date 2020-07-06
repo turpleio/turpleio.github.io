@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "Get Started": ["whatisturple", "overview"],
+    "Qick Start": ["doc3"],
+    "Deployment": ["doc8"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
