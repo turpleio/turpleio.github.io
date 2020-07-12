@@ -22,8 +22,8 @@ const users = [
 
 const siteConfig = {
   title: 'Turple Docs', // Title for your website.
-  tagline: 'A website for testing',
-  url: 'https://turpleio.github.io', // Your website URL
+  tagline: '',
+  url: '', // Your website URL
   baseUrl: '/guide/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'whatisturple', label: 'Docs'},
+    {doc: 'get-started-what-is-turple', label: 'Docs'},
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
     // {blog: true, label: 'Blog'},
@@ -94,7 +94,7 @@ const siteConfig = {
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
-  docsSideNavCollapsible: true,
+  //docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,

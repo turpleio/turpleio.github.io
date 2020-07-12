@@ -1,10 +1,30 @@
 {
   "docs": {
-    "Get Started": ["whatisturple", "overview"],
-    "Qick Start": ["doc3"],
-    "Deployment": ["doc8"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Get Started": [
+      "get-started-what-is-turple", 
+      "get-started-overview",
+      "get-started-architecture",
+      "get-started-configurations",
+      "get-started-commands"
+    ],
+    "Features": [
+      "features-high-availability",
+      "features-multi-cloud",
+      "features-reverse-proxy",
+      "features-coordinator",
+      "features-registry",
+      "features-auto-scale",
+      "features-devops",
+      "features-monitoring",
+      "features-logging",
+      "features-iot",
+      "features-edge"
+    ],
+    "Use Cases": [
+      "use-cases-small-business",
+      "use-cases-large-business",
+      "use-cases-create-your-paas",
+      "use-cases-migration"
+    ]
   }
 }
