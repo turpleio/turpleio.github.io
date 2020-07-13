@@ -3,7 +3,7 @@ id: features-reverse-proxy
 title: Reverse Proxy
 ---
 
-<img src="/guide/img/turple12.png" alt="" width="600"/>
+<img src="/guide/img/turple12.png" alt="" width="560"/>
 
 
 기본적으로 Haproxy를 활용합니다. 이를 통해, 외부로 제공되는 웹서비스의 로드분산과 장애조치failover를 제공합니다.

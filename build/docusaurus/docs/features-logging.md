@@ -3,6 +3,8 @@ id: features-logging
 title: Logging
 ---
 
+<img src="/guide/img/turple15.png" alt="" width="400"/>
+
 Rsyslog / ELK : 로그 통합 및 분석
 백엔드에서 운영되는 서비스의 severity에 따른 로그 관리는 무엇보다 중요합니다. 특히, 다수의 마이크로 서비스로 구성되는 환경에서는 로그를 통한 빠른 문제해결이 무엇보다 중요합니다.
 

@@ -3,7 +3,7 @@ id: get-started-overview
 title: Overview
 ---
 
-![Turple Overview](/guide/img/turple02.png)
+<img src="/guide/img/turple02.png" alt="" width="640"/>
 
 
 ## Enterprise-proven

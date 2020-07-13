@@ -5,6 +5,9 @@ title: Monitoring
 
 The monitoring system keeps tracks of all instances and services. The system alerts engineers when detecting abnormal conditions. All logging data are collected by ELK for system analysis.
 
+<img src="/guide/img/turple14.png" alt="" width="480"/>
+
+
 Zabbix는 서버의 각종 자원을 모니터링하고, 문제가 발생했을 때 알람을 발생할 수 있는 오픈소스 도구입니다.
 
 다음 대상을 모니터링하고, 지정된 임계치를 넘으면 알람이 발생합니다.
