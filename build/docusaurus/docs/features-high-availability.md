@@ -5,17 +5,13 @@ title: High Availability
 
 Services of cloud native application must be stopless. The clustring architecture and monitoring system of Turple makes the services fault-tolerant and realiable.
 
+The default cluster size of Turple is 3 and the size can change as service requirments. Basically in Turple the micro services expands horizontally for load balancing and failover.
+
+Turple uses two ways for health-check. One is health-checking for intances by using Route53. The other is for service containers. Turple sets up to make Route53 health-check gateway instances regularly.
+
 <img src="/guide/img/turple07.png" alt="" width="480"/>
+
+What if Gateway-3 was down? First Route53 passes requests only to Gateway-1 and Gateway-2. Then Turple's reverse proxy passes traffic to only available service containers. Engineers can recognize the problem occurs by alerting from the monitoring system. Since other two server are running they can have enough time to resolve the problem. In the wrost case even if two server are down one server can provide service. This is how Turple implements high availability of service. 
 
 <img src="/guide/img/turple08.png" alt="" width="480"/>
 
-위에서 부터 차례로 설명합니다.
-깃플 서비스의 백엔드는 단위기능을 수행하는 마이크로서비스들로 구성됩니다. 마이크로서비스들은 부하분산과 장애조치failover를 위해 여러 노드에 걸쳐 수평적확장될 수 있습니다.
-
-마이크로서비스는 버전관리되는 도커이미지로 제작되어 여러개 노드에 배포됩니다. 마이크로서비스는 도커docker 컨테이너로 수행됩니다. 모든 백엔드의 서비스는 도커로 관리되고 있습니다.
-
-
-
-백엔드 인프라를 고민하면서,
-
-Docker swarm 와 Kubenetes 를 검토했고 실제로 docker swarm은 한동안 사용했었지만, 정교하게 배포를 위한 기능과 네트워크 성능 때문에 직접 환경을 구축하게 되었습니다. Cloud Foundry 같은 Application PaaS 지향하며 우리의 목적에 맞는 가벼운 환경을 지향합니다.

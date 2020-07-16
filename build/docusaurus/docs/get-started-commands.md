@@ -3,12 +3,51 @@ id: get-started-commands
 title: Commands
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Turple's commands are very simple but very powerful. There are many commands and options to control a variety of operations. This page explains four commands of them.
 
-Duis et egestas libero, imperdiet faucibus ipsum. Sed posuere eget urna vel feugiat. Vivamus a arcu sagittis, fermentum urna dapibus, congue lectus. Fusce vulputate porttitor nisl, ac cursus elit volutpat vitae. Nullam vitae ipsum egestas, convallis quam non, porta nibh. Morbi gravida erat nec neque bibendum, eu pellentesque velit posuere. Fusce aliquam erat eu massa eleifend tristique.
+## Turple Shell
 
-Sed consequat sollicitudin ipsum eget tempus. Integer a aliquet velit. In justo nibh, pellentesque non suscipit eget, gravida vel lacus. Donec odio ante, malesuada in massa quis, pharetra tristique ligula. Donec eros est, tristique eget finibus quis, semper non nisl. Vivamus et elit nec enim ornare placerat. Sed posuere odio a elit cursus sagittis.
+Bascially Turple proivdes four types of shell. You can select Turple environment by simply using a different shell. The example is to enter the shell for dev environment.
 
-Phasellus feugiat purus eu tortor ultrices finibus. Ut libero nibh, lobortis et libero nec, dapibus posuere eros. Sed sagittis euismod justo at consectetur. Nulla finibus libero placerat, cursus sapien at, eleifend ligula. Vivamus elit nisl, hendrerit ac nibh eu, ultrices tempus dui. Nam tellus neque, commodo non rhoncus eu, gravida in risus. Nullam id iaculis tortor.
+```bash
+$ ./tp.dev
+```
 
-Nullam at odio in sem varius tempor sit amet vel lorem. Etiam eu hendrerit nisl. Fusce nibh mauris, vulputate sit amet ex vitae, congue rhoncus nisl. Sed eget tellus purus. Nullam tempus commodo erat ut tristique. Cras accumsan massa sit amet justo consequat eleifend. Integer scelerisque vitae tellus id consectetur.
+## ls
+
+`ls` is used to list all instances of the current environment. The example will list all instances in dev environment.
+
+```bash
+tp.dev > ls
+```
+
+## create-world
+
+`create-world` is used to create Turple environment as configurations. This will create all cluster instances and initialize them to be ready to start microservices.
+
+```bash
+tp.dev > create-world
+```
+
+The following example show how Turple environment is deployed with only three commands.
+
+<script id="asciicast-fx5YPUOAIAs7NrvmkVqoUVTw9" src="https://asciinema.org/a/fx5YPUOAIAs7NrvmkVqoUVTw9.js" async></script>
+
+## ssh
+
+`ssh` is used to connect ssh to a node. A node name is used instead of ip address.
+
+```bash
+tp.dev > ssh dev-ci1
+```
+
+## make
+
+`make` is usually used to build and deploy microservices. The example is to build applications and deploy them to all nodes of `dev-gw` cluster. 
+
+```bash
+dev-ci1 $ make RUN_TARGET_CLUSTER=dev-gw apps
+```
+
+The following example shows how the microservice `app` and `rproxy` are built and deployed to `dev-gw` cluster.
+<script id="asciicast-Y35dKkAB3TRLBvw72QMFSR6Pw" src="https://asciinema.org/a/Y35dKkAB3TRLBvw72QMFSR6Pw.js" async></script>

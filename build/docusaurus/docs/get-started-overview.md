@@ -3,6 +3,12 @@ id: get-started-overview
 title: Overview
 ---
 
+
+## Cloud Native Platform
+
+Turple is the real cloud native platform with best practices, in that providing a variety of solutions and technologies to make cloud native applications start their service without extra effort.
+
+
 <img src="/guide/img/turple02.png" alt="" width="640"/>
 
 
@@ -10,7 +16,7 @@ title: Overview
 
 - Leveraging proven open source technologies
 
-- Proven on cloud infrastructure like AWS, Azure, Oracle and OpenStack
+- Proven on cloud infrastructure like AWS, Azure, Oracle, OpenStack and Naver
 
 - Proven in Industries like security, mobility, IoT, healthcare, blockchain and SaaS
 
@@ -32,17 +38,17 @@ title: Overview
 
 - Applying new patch in an hour
 
-- CI : GitHub, Jenkins
+- CI (GitHub and Jenkins)
 
-- CD : Ansible
+- CD (Ansible)
 
-- LMA : ELK and Zabbix
+- LMA (ELK and Zabbix)
 
-- IaC and Automation : Ansible, Jenkins,Zabbix
+- IaC and Automation (Ansible, Jenkins and Zabbix)
 
-- ChatOps : Slack
+- ChatOps (Slack)
 
-- Collaboration :GitHub, Slack
+- Collaboration (GitHub and Slack)
 
 ## Automation
 

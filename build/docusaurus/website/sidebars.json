@@ -4,7 +4,6 @@
       "get-started-what-is-turple", 
       "get-started-overview",
       "get-started-architecture",
-      "get-started-configurations",
       "get-started-commands"
     ],
     "Features": [
@@ -23,7 +22,6 @@
     "Use Cases": [
       "use-cases-small-business",
       "use-cases-large-business",
-      "use-cases-create-your-paas",
       "use-cases-migration"
     ]
   }
