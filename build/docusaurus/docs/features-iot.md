@@ -3,9 +3,6 @@ id: features-iot
 title: IoT
 ---
 
-Turple's IoT module supports MQTT protocol and its capacity is very large. The IoT module can be scable on Turple and respond to a number of devices.
-
+For IoT services, the server must have sufficient capacity to receive large amount of signal data. Turple's IoT module supports MQTT protocol and its capacity is very large and provides various security options. To store various types of data, you can use Redis as an in-memory database, MongoDB as a consistent database and InfluxDB as a time series database can be installed in Turple environment. Of course, other databases like MySql or Postgres are available.
 
 <img src="/guide/img/turple16.png" alt="" width="640"/>
-
-Digital Twin requires high performance in data collection and processing. Turple supports a time series database as well as the IoT module, and has already started working with an EV company.
