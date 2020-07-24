@@ -50,7 +50,7 @@ dev-ci1 $ make RUN_TARGET_CLUSTER=dev-gw apps
 
 The following example shows how Turple environment is deployed with only three commands.
 
-<script id="asciicast-fx5YPUOAIAs7NrvmkVqoUVTw9" src="https://asciinema.org/a/fx5YPUOAIAs7NrvmkVqoUVTw9.js" async></script>
+<script id="asciicast-KXqv4jjVTgqBp7DsHlU9vQvzU" src="https://asciinema.org/a/KXqv4jjVTgqBp7DsHlU9vQvzU.js" async></script>
 
 ## Example 2
 
