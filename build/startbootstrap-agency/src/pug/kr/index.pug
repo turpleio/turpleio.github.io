@@ -10,7 +10,7 @@ html(lang='kr')
 
         title Turple - Cloud Native Platform
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='/assets/img/favicon.ico')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
@@ -21,7 +21,7 @@ html(lang='kr')
         link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700', rel='stylesheet', type='text/css')
 
         // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        link(href='/css/styles.css', rel='stylesheet')
 
     body#page-top
 
@@ -29,7 +29,7 @@ html(lang='kr')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand.js-scroll-trigger(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='')
+                    img(src='/assets/img/navbar-logo.svg', alt='')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ml-1
@@ -72,19 +72,19 @@ html(lang='kr')
                     h3.section-subheading.text-muted Turple은 당신의 서비스를 민첩하고 확장가능하며 무중단 서비스가 가능하도록 합니다. 
                 .row.text-center
                     .col-md-4
-                        img.img-fluid(src='assets/img/why/01-why.png', alt='')
+                        img.img-fluid(src='/assets/img/why/01-why.png', alt='')
 
                         h4.my-3 민첩성
                         p.text-muted.text-center
                             | 클라우드 네이티브 어플리케이션은 어떤 상황에서도 민첩하게 대응해야 합니다. 클라우드 네이티브 환경에서는 개발과 배포 그리고 운영과정에서의 어플리케이션 민첩성이 가장 중요한 요소중에 하나입니다. 
                     .col-md-4
-                        img.img-fluid(src='assets/img/why/02-why.png', alt='')
+                        img.img-fluid(src='/assets/img/why/02-why.png', alt='')
 
                         h4.my-3 확장성
                         p.text-muted.text-center
                             | 클라우드 네이티브 환경에서 요구하는 중요한 요소중 하나는 확장성입니다. 서비스는 다양한 원인에 의해서 확장과 축소가 가능해야 하며, 만약 당신의 서비스가 Docker 컨테이너 형태라면, Turple은 가상머신의 인스턴스 부터 서비스 배포까지 모든 것을 처리할 수 있습니다.                              
                     .col-md-4
-                        img.img-fluid(src='assets/img/why/03-why.png', alt='')
+                        img.img-fluid(src='/assets/img/why/03-why.png', alt='')
 
                         h4.my-3 무중단
                         p.text-muted.text-center
@@ -99,42 +99,42 @@ html(lang='kr')
                 .row
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
-                            img.img-fluid(src='assets/img/portfolio/01-thumbnail.png', alt='')
+                            img.img-fluid(src='/assets/img/portfolio/01-thumbnail.png', alt='')
                             .portfolio-caption
                                 .portfolio-caption-heading.my-3 고가용성
                                 .portfolio-caption-subheading.text-center.text-muted 드우드 네이티브 어플리케이션의 서비스는 중단되어서는 안됩니다. Turple의 클러스터링 구조와 모니터링 시스템은 장애극복이 가능하며 신뢰성있는 서비스를 만듭니다.
                                 
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
-                            img.img-fluid(src='assets/img/portfolio/02-thumbnail.png', alt='')
+                            img.img-fluid(src='/assets/img/portfolio/02-thumbnail.png', alt='')
                             .portfolio-caption
                                 .portfolio-caption-heading.my-3 오케스트레이션
                                 .portfolio-caption-subheading.text-center.text-muted 클라우드 네이티브 시스템은 많은 컨테이너와 자원들을 포함합니다. Turple은 서비스 상태검사, 서비스 디스커버리, 모니터링, 알람등을 사용하여 모든 컨테이너와 자원들을 관리하고 제어합니다.
                                 
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
-                            img.img-fluid(src='assets/img/portfolio/03-thumbnail.png', alt='')
+                            img.img-fluid(src='/assets/img/portfolio/03-thumbnail.png', alt='')
                             .portfolio-caption
                                 .portfolio-caption-heading.my-3 데브옵스
                                 .portfolio-caption-subheading.text-center.text-muted 진정한 클라우드 네이티브 서비스를 만들기 위해서 데브옵스는 필수입니다. Github의 푸쉬이벤트가 Turple로 전달되면, CI/CD 프로세스에 의해서 소스는 자동으로 빌드되고 새로 생성된 컨테이너는 지정된 인스턴스에 자동으로 배포됩니다. 
                                 
                     .col-lg-4.col-sm-6.mb-4.mb-lg-0
                         .portfolio-item
-                            img.img-fluid(src='assets/img/portfolio/04-thumbnail.png', alt='')
+                            img.img-fluid(src='/assets/img/portfolio/04-thumbnail.png', alt='')
                             .portfolio-caption
                                 .portfolio-caption-heading.my-3 자동확장
                                 .portfolio-caption-subheading.text-center.text-muted 가상머신 인스턴스도 Turple에 의해 컨트롤이 가능하며, 상황에 따라서 서비스 규모의 확장/축소가 가능합니다. 이 작업은 엔지니어가 간단한 명령어를 사용하여 수동으로도 할 수 있지만, 모니터링 시스템에 의해서 자동으로 수행될 수도 있습니다.
                                 
                     .col-lg-4.col-sm-6.mb-4.mb-sm-0
                         .portfolio-item
-                            img.img-fluid(src='assets/img/portfolio/05-thumbnail.png', alt='')
+                            img.img-fluid(src='/assets/img/portfolio/05-thumbnail.png', alt='')
                             .portfolio-caption
                                 .portfolio-caption-heading.my-3 모니터링 & 로깅
                                 .portfolio-caption-subheading.text-center.text-muted 모니터링 시스템은 모든 인스턴스와 서비스를 계속 감시합니다. 이 시스템은 이상증상을 감지하면 엔지니어에게 알려줍니다. 분석을 위해서 모든 로그데이터는 ELK에 수집됩니다.
                                 
                     .col-lg-4.col-sm-6
                         .portfolio-item
-                            img.img-fluid(src='assets/img/portfolio/06-thumbnail.png', alt='')
+                            img.img-fluid(src='/assets/img/portfolio/06-thumbnail.png', alt='')
                             .portfolio-caption
                                 .portfolio-caption-heading.my-3 이식성
                                 .portfolio-caption-subheading.text-center.text-muted 클라우드 네이티브 어플리케이션은 모든 클라우드 환경에서 동작해야 합니다. Turple을 사용하면 어플리케이션이 어디에 설치되든 동일한 방식으로 배포되고 동작할 수 있습니다. Turple은 AWS, Azure, OpenStack, Google, Naver 그리고 더 많은 클라우드 환경을 지원합니다. 
@@ -148,7 +148,7 @@ html(lang='kr')
                 ul.timeline
                     li
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/edge/01-edge.png', alt='')
+                            img.rounded-circle.img-fluid(src='/assets/img/edge/01-edge.png', alt='')
                         .timeline-panel
                             .timeline-heading
                                 h4 IoT
@@ -158,7 +158,7 @@ html(lang='kr')
                                     | Turple의 IoT 모듈은 MQTT 프로토콜을 지원하며 수용량이 매우 큽니다. 이 IoT 모듈은 Turple 위에서 확장이 가능하며 수 많은 장비에 대응할 수 있습니다.                                    
                     li.timeline-inverted
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/edge/02-edge.png', alt='')
+                            img.rounded-circle.img-fluid(src='/assets/img/edge/02-edge.png', alt='')
                         .timeline-panel
                             .timeline-heading
                                 h4 Digital Twin
@@ -168,7 +168,7 @@ html(lang='kr')
                                     | Digital Twin은 데이터 수집과 처리를 위해 고성능을 요구합니다. Turple은 IoT 모듈뿐만 아니라 Time Series Database를 지원하며, 이미 전기차 업체과 함께 관련 프로젝트를 진행하고 있습니다.                                    
                     li
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/edge/03-edge.png', alt='')
+                            img.rounded-circle.img-fluid(src='/assets/img/edge/03-edge.png', alt='')
                         .timeline-panel
                             .timeline-heading
                                 h4 Edge
@@ -195,19 +195,19 @@ html(lang='kr')
                 .row
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/01-team.png', alt='')
+                            img.mx-auto.rounded-circle(src='/assets/img/team/01-team.png', alt='')
                             h4.my-3 서비스정의
                             p.text-muted.text-center 서비스명, 가상머신의 개수, 클러스터 사이즈등 서비스를 정의하기 위한 설정들이 하나의 파일에 쉽게 정의될 수 있습니다. 엔지니어들은 더 이상 서비스 설정을 위해서 수 많은 파일들을 신경쓰지 않아도 됩니다.
                             
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/02-team.png', alt='')
+                            img.mx-auto.rounded-circle(src='/assets/img/team/02-team.png', alt='')
                             h4.my-3 명령어수행
                             p.text-muted.text-center 코딩이 아닌 간단한 명령어들을 수행하여 서비스 배포를 포함한 가상머신의 생성과 초기화 그리고 서비스 확장/축소와 같은 클라우드 서비스의 운영과 관리가 가능합니다.
                             
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/03-team.png', alt='')
+                            img.mx-auto.rounded-circle(src='/assets/img/team/03-team.png', alt='')
                             h4.my-3 더 나은 서비스
                             p.text-muted.text-center Turple은 엔지니어를 인프라 관리와 서비스 상태의 관리로 부터 자유롭게 해줍니다. 이를 통해 엔지니어는 더 나은 서비스를 위한 개발과 운영에 집중할 수 있습니다.
                               
@@ -227,24 +227,24 @@ html(lang='kr')
                 .row.client-flex
                     .col-md-2.col-sm-2.my-4
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/pentasecurity.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/pentasecurity.png', alt='')
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/humax.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/humax.png', alt='')
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/autocrypt.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/autocrypt.png', alt='')
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/carplat.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/carplat.png', alt='')
                     .col-md-2.col-sm-2.my-4
                 .row.client-flex
                     .col-md-2.col-sm-2.my-4
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/pmgrow.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/pmgrow.png', alt='')
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/gitple.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/gitple.png', alt='')
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/m2cloud.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/m2cloud.png', alt='')
                     .col-md-2.col-sm-2.my-4
-                        img.img-fluid.d-block.mx-auto(src='assets/img/logos/polestar.png', alt='')
+                        img.img-fluid.d-block.mx-auto(src='/assets/img/logos/polestar.png', alt='')
                     .col-md-2.col-sm-2.my-4
 
         // Comments
@@ -280,12 +280,12 @@ html(lang='kr')
                         a.link(href='https://gitple.io') gitple.io
                     .col-lg-6.text-lg-left
                     .col-lg-2.text-lg-right
-                        img.img-fluid(src='assets/img/aws.png', alt='')
+                        img.img-fluid(src='/assets/img/aws.png', alt='')
 
                 .row.align-items-center.py-2
                     .col-lg-4.text-lg-left
                         a.link(href='/') English |
-                        a.link(href='/kr.html') 한국어
+                        a.link(href='/kr') 한국어
 
                 .row.align-items-center.py-3
                     .col-lg-4.text-lg-left
@@ -310,10 +310,10 @@ html(lang='kr')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
 
         // Contact form JS
-        script(src='assets/mail/jqBootstrapValidation.js')
-        script(src='assets/mail/contact_me.js')
+        script(src='/assets/mail/jqBootstrapValidation.js')
+        script(src='/assets/mail/contact_me.js')
 
         // Core theme JS
-        script(src='js/scripts.js')
+        script(src='/js/scripts.js')
 
         
