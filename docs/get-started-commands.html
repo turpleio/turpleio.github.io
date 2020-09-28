@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Commands · Turple Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Turple&#x27;s commands are very simple but very powerful. There are so many commands and options to control sophisticated operations. On this page let&#x27;s take a look at some of them."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Commands · Turple Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://turpleio.github.io/guide/"/><meta property="og:description" content="Turple&#x27;s commands are very simple but very powerful. There are so many commands and options to control sophisticated operations. On this page let&#x27;s take a look at some of them."/><meta property="og:image" content="https://turpleio.github.io/guide/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://turpleio.github.io/guide/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/guide/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/guide/js/scrollSpy.js"></script><link rel="stylesheet" href="/guide/css/main.css"/><script src="/guide/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/guide/"><img class="logo" src="/guide/img/favicon.ico" alt="Turple Docs"/><h2 class="headerTitleWithLogo">Turple Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/guide/docs/get-started-what-is-turple" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Get Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Get Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/guide/docs/get-started-what-is-turple">What is Turple?</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/get-started-overview">Overview</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/guide/docs/get-started-commands">Commands</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Features</h3><ul class=""><li class="navListItem"><a class="navItem" href="/guide/docs/features-high-availability">High Availability</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-multi-cloud">Multi Cloud</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-reverse-proxy">Reverse Proxy</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-coordinator">Coordinator</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-registry">Registry</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-auto-scale">Auto Scale</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-devops">DevOps</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-monitoring">Monitoring</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-logging">Logging</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-iot">IoT</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-edge">Edge</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Use Cases</h3><ul class=""><li class="navListItem"><a class="navItem" href="/guide/docs/use-cases-small-business">Small Business</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/use-cases-large-business">Large Business</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/use-cases-migration">Migration</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Commands</h1></header><article><div><span><p>Turple's commands are very simple but very powerful. There are so many commands and options to control sophisticated operations. On this page let's take a look at some of them.</p>
+<h2><a class="anchor" aria-hidden="true" id="turple-shell"></a><a href="#turple-shell" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Turple Shell</h2>
+<p>Basically Turple provides four shell types as development environment, Dev, Test, Staging and Product. You can select the environment by simply using a different shell. The example is to run the shell for dev environment.</p>
+<pre><code class="hljs css language-bash">$ ./tp.dev
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="ls"></a><a href="#ls" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ls</h2>
+<p><code>ls</code> is used to see the information of all instances in the current environment.</p>
+<pre><code class="hljs css language-bash">tp.dev &gt; ls
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="create-world"></a><a href="#create-world" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>create-world</h2>
+<p><code>create-world</code> is used to create a whole environment of Turple with configurations. This will create all cluster instances and initialize them to be ready to start microservices.</p>
+<pre><code class="hljs css language-bash">tp.dev &gt; create-world
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="ssh"></a><a href="#ssh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ssh</h2>
+<p><code>ssh</code> is used to connect ssh to a node in Turple environment.</p>
+<pre><code class="hljs css language-bash">tp.dev &gt; ssh dev-ci1
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="make"></a><a href="#make" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>make</h2>
+<p><code>make</code> is usually used to build and deploy microservices on CI machine. The example is for building service applications and deploying them to <code>dev-gw</code> cluster.</p>
+<pre><code class="hljs css language-bash">dev-ci1 $ make RUN_TARGET_CLUSTER=dev-gw apps
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="example-1"></a><a href="#example-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example 1</h2>
+<p>The following example shows how Turple environment is deployed with only three commands.</p>
+<script id="asciicast-KXqv4jjVTgqBp7DsHlU9vQvzU" src="https://asciinema.org/a/KXqv4jjVTgqBp7DsHlU9vQvzU.js" async></script>
+<h2><a class="anchor" aria-hidden="true" id="example-2"></a><a href="#example-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example 2</h2>
+<p>The following example shows how the microservices <code>app</code> and <code>rproxy</code> are built and deployed to <code>dev-gw</code> cluster.</p>
+<script id="asciicast-Y35dKkAB3TRLBvw72QMFSR6Pw" src="https://asciinema.org/a/Y35dKkAB3TRLBvw72QMFSR6Pw.js" async></script></span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/guide/docs/get-started-overview"><span class="arrow-prev">← </span><span>Overview</span></a><a class="docs-next button" href="/guide/docs/features-high-availability"><span>High Availability</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#turple-shell">Turple Shell</a></li><li><a href="#ls">ls</a></li><li><a href="#create-world">create-world</a></li><li><a href="#ssh">ssh</a></li><li><a href="#make">make</a></li><li><a href="#example-1">Example 1</a></li><li><a href="#example-2">Example 2</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="https://turpleio.github.io" class="nav-home"><img src="/guide/img/favicon.ico" alt="Turple Docs" width="66" height="58"/></a><div><h5>Contacts</h5><a href="mailto:contact@gitple.com">contact@gitple.com</a><a href="https://gitple.io">gitple.io</a></div></section><section class="copyright">Copyright © 2017 Gitple</section></footer></div></body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Overview · Turple Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Cloud Native Platform"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Overview · Turple Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://turpleio.github.io/guide/"/><meta property="og:description" content="## Cloud Native Platform"/><meta property="og:image" content="https://turpleio.github.io/guide/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://turpleio.github.io/guide/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/guide/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/guide/js/scrollSpy.js"></script><link rel="stylesheet" href="/guide/css/main.css"/><script src="/guide/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/guide/"><img class="logo" src="/guide/img/favicon.ico" alt="Turple Docs"/><h2 class="headerTitleWithLogo">Turple Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/guide/docs/get-started-what-is-turple" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Get Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Get Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/guide/docs/get-started-what-is-turple">What is Turple?</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/guide/docs/get-started-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/get-started-commands">Commands</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Features</h3><ul class=""><li class="navListItem"><a class="navItem" href="/guide/docs/features-high-availability">High Availability</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-multi-cloud">Multi Cloud</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-reverse-proxy">Reverse Proxy</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-coordinator">Coordinator</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-registry">Registry</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-auto-scale">Auto Scale</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-devops">DevOps</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-monitoring">Monitoring</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-logging">Logging</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-iot">IoT</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/features-edge">Edge</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Use Cases</h3><ul class=""><li class="navListItem"><a class="navItem" href="/guide/docs/use-cases-small-business">Small Business</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/use-cases-large-business">Large Business</a></li><li class="navListItem"><a class="navItem" href="/guide/docs/use-cases-migration">Migration</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Overview</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="cloud-native-platform"></a><a href="#cloud-native-platform" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cloud Native Platform</h2>
+<p>Turple is the real cloud native platform with best practices, in that providing a variety of solutions and technologies to make cloud native applications start their service without extra effort.</p>
+<p><img src="/guide/img/turple02.png" alt="" width="640"/></p>
+<h2><a class="anchor" aria-hidden="true" id="enterprise-proven"></a><a href="#enterprise-proven" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enterprise-proven</h2>
+<ul>
+<li><p>Leveraging proven open source technologies</p></li>
+<li><p>Proven on cloud infrastructure like AWS, Azure, Oracle, OpenStack and Naver</p></li>
+<li><p>Proven in Industries like security, mobility, IoT, healthcare, blockchain and SaaS</p></li>
+<li><p>Showed no 5+ minute downtime last year</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="integrated-platform"></a><a href="#integrated-platform" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integrated Platform</h2>
+<ul>
+<li><p>Securing optimized, proven cloud native solution with best practices</p></li>
+<li><p>Reducing significant learning curve</p></li>
+<li><p>Starting easily migrating existing app to cloud native</p></li>
+<li><p>Developing and operating cloud native app in a simple, fast and safe way</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="devops-best-practices"></a><a href="#devops-best-practices" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DevOps Best Practices</h2>
+<ul>
+<li><p>Healthchecking microservices</p></li>
+<li><p>Applying new patch in an hour</p></li>
+<li><p>CI (GitHub and Jenkins)</p></li>
+<li><p>CD (Ansible)</p></li>
+<li><p>LMA (ELK and Zabbix)</p></li>
+<li><p>IaC and Automation (Ansible, Jenkins and Zabbix)</p></li>
+<li><p>ChatOps (Slack)</p></li>
+<li><p>Collaboration (GitHub and Slack)</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="automation"></a><a href="#automation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Automation</h2>
+<ul>
+<li><p>Provisioning infrastructure</p></li>
+<li><p>Autoscaling microservice with LMA</p></li>
+<li><p>Supporting Kubernetes at scale</p></li>
+<li><p>Automating necessary actions with metric- driven LMA</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="kubernetes-support"></a><a href="#kubernetes-support" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Kubernetes Support</h2>
+<ul>
+<li><p>Interconnecting Kubernetes service with Reverse Proxy</p></li>
+<li><p>Automating installment with Kuberspray by ansible script</p></li>
+<li><p>Monitoring Kubernetes Infrastructure and Pod Deployment</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="expediated-launch"></a><a href="#expediated-launch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Expediated Launch</h2>
+<ul>
+<li><p>Saving significant time and effort to digest cloud native technologies and build own best practices</p></li>
+<li><p>Starting directly from optimized, integrated cloud native software platform and DevOps solutions to reduce time-to-market</p></li>
+<li><p>Launching the initial service in 8+ weeks</p></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/guide/docs/get-started-what-is-turple"><span class="arrow-prev">← </span><span>What is Turple?</span></a><a class="docs-next button" href="/guide/docs/get-started-commands"><span>Commands</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#cloud-native-platform">Cloud Native Platform</a></li><li><a href="#enterprise-proven">Enterprise-proven</a></li><li><a href="#integrated-platform">Integrated Platform</a></li><li><a href="#devops-best-practices">DevOps Best Practices</a></li><li><a href="#automation">Automation</a></li><li><a href="#kubernetes-support">Kubernetes Support</a></li><li><a href="#expediated-launch">Expediated Launch</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="https://turpleio.github.io" class="nav-home"><img src="/guide/img/favicon.ico" alt="Turple Docs" width="66" height="58"/></a><div><h5>Contacts</h5><a href="mailto:contact@gitple.com">contact@gitple.com</a><a href="https://gitple.io">gitple.io</a></div></section><section class="copyright">Copyright © 2017 Gitple</section></footer></div></body></html>

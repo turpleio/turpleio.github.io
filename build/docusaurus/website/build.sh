@@ -5,4 +5,4 @@ npm run build
 
 echo "Copy build/guide to ../../../"
 rm -rf ../../../guide
-cp -r build/guide ../../../
+cp -r build/guide/* ../../../
