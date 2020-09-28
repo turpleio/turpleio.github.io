@@ -25,7 +25,7 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          <a href={this.props.config.url} className="nav-home">
+          <a href="https://turple.io" className="nav-home">
             {this.props.config.footerIcon && (
               <img
                 src={this.props.config.baseUrl + this.props.config.footerIcon}
@@ -39,6 +39,9 @@ class Footer extends React.Component {
             <h5>Contacts</h5>
             <a href='mailto:contact@gitple.com'>
             contact@gitple.com
+            </a>
+            <a href='https://turple.io'>
+            turple.io
             </a>
             <a href='https://gitple.io'>
             gitple.io
