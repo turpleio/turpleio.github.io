@@ -21,7 +21,8 @@
     "Use Cases": [
       "use-cases-small-business",
       "use-cases-large-business",
-      "use-cases-migration"
+      "use-cases-migration",
+      "use-cases-kubernetes"
     ]
   }
 }
