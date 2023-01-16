@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[7690],{99010:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"rust","name":"rust","count":1,"permalink":"/blog/tags/rust"}')}}]);

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=3">
+<meta httpequiv="x-ua-compatible" content="ie=edge">
+<meta property="og:type" content="website">
+<meta name="author" content="turpleio">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.75">
+<link href="https://www.googletagmanager.com" rel="dns-prefetch">
+<link href="https://www.google-analytics.com" rel="dns-prefetch">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/img/icons/apple-180x180.png" sizes="180x180">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-PVR7M2G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","GTM-PVR7M2G",{anonymize_ip:!0})</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Turple: Cloud Native Platform" href="/opensearch.xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#d14671">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#21222c">
+<link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Turple: Cloud Native Platform Blog RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Turple: Cloud Native Platform Blog Atom Feed"><title data-react-helmet="true">What is time-series data, and why are we building a time-series database (TSDB)? | Turple: Cloud Native Platform</title><meta data-react-helmet="true" property="og:title" content="What is time-series data, and why are we building a time-series database (TSDB)? | Turple: Cloud Native Platform"><meta data-react-helmet="true" name="description" content="A primer on time-series data and time-series databases (TSDB), and why we decided to build QuestDB"><meta data-react-helmet="true" name="twitter:description" content="A primer on time-series data and time-series databases (TSDB), and why we decided to build QuestDB"><meta data-react-helmet="true" property="og:description" content="A primer on time-series data and time-series databases (TSDB), and why we decided to build QuestDB"><meta data-react-helmet="true" name="twitter:title" content="What is time-series data, and why are we building a time-series database (TSDB)? | Turple: Cloud Native Platform"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for &quot;What is time-series data, and why are we building a time-series database (TSDB)? | Turple: Cloud Native Platform&quot;"><meta data-react-helmet="true" property="og:image" content="https://turpleio.github.io/img/blog/2020-11-26/banner.jpg"><meta data-react-helmet="true" name="twitter:image" content="https://turpleio.github.io/img/blog/2020-11-26/banner.jpg"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/assets/css/styles.4f6557e4.css">
+</head>
+<body itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Turple: Cloud Native Platform">
+<meta itemprop="description" content="Turple is a cloud native platform which can help you build and operate your services on cloud.">
+<meta itemprop="url" content="https://turpleio.github.io">
+<meta itemprop="logo" content="https://turpleio.github.io/img/favicon.png">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"dark")}()</script><div id="__docusaurus">
+<nav class="navbar navbar_wBc8 navbar--light"><div class="navbar__inner inner_Y8Z6"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand brand_AtiA" href="/">QuestDB</a><a class="navbar__item navbar__link" href="/docs/">Docs</a></div><div class="navbar__items navbar__items--right"></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand brand_AtiA" href="/">QuestDB</a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/">Docs</a></li></ul></div></div></div></nav><div class="wrapper_DIJ0 blog-wrapper"><div class="container margin-vert--lg"><div class="row"><div class="col col--3"><div class="sidebar_q+wC thin-scrollbar"><h3 class="sidebarItemTitle_9G5K">Recent posts</h3><ul class="sidebarItemList_6T4b"><li class="sidebarItem_cjdF"><a class="sidebarItemLink_zyXk" href="/blog/2022/12/19/merry-questmas-gifts-2023">Merry Questmas! Here are your gifts for 2023...</a></li><li class="sidebarItem_cjdF"><a class="sidebarItemLink_zyXk" href="/blog/2022/12/13/using-prometheus-loki-grafana-monitor-questdb-kubernetes">Using Prometheus, Loki, and Grafana to monitor QuestDB in Kubernetes</a></li><li class="sidebarItem_cjdF"><a class="sidebarItemLink_zyXk" href="/blog/2022/11/30/full-table-scan-are-fast">Listen to Your CPU - Full-table Scans Are Fast</a></li><li class="sidebarItem_cjdF"><a class="sidebarItemLink_zyXk" href="/blog/2022/11/25/questdb-6.6.1-dynamic-commits">QuestDB 6.6.1 - Dynamic Commits</a></li><li class="sidebarItem_cjdF"><a class="sidebarItemLink_zyXk" href="/blog/2022/11/23/sql-extensions-time-series-data-questdb-part-ii">SQL Extensions for Time Series Data in QuestDB - Part II</a></li></ul></div></div><main class="col col--7"><article><header><h1 class="title_KBQu">What is time-series data, and why are we building a time-series database (TSDB)?</h1><time datetime="2020-11-26T00:00:00.000Z" class="date_A31P">November 26, 2020 · 9 min read</time><div class="avatar margin-vert--md"><a href="https://github.com/tris0laris" target="_blank" rel="noopener noreferrer" class="avatar__photo-link avatar__photo"><img src="https://avatars.githubusercontent.com/tris0laris" alt="Nicolas Hourcard"></a><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/tris0laris" target="_blank" rel="noopener noreferrer">Nicolas Hourcard</a></h4><small class="avatar__subtitle">Co-founder &amp; CEO, QuestDB</small></div></div></header><div class="markdown"><figure><img alt="An open lock with its key attached to it." class="image_1-Fc image--title_Z46g" height="433" src="/img/blog/2020-11-26/banner.jpg" width="650"><figcaption class="caption_VLGg">Photo by <a href="https://unsplash.com/photos/uCMKx2H1Y38" target="_blank" rel="noopener noreferrer">AbsolutVision</a> on <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption></figure><p>Like all good superheroes, every company has its own origin story explaining why
+they were created and how they grew over time. This article covers the origin
+story of QuestDB and frames it with an introduction to time series databases to
+show where we sit in that landscape today.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="part-i-time-series-data-and-characteristics-of-tsdbs"></a>Part I: Time series data and characteristics of TSDBs<a class="hash-link" href="#part-i-time-series-data-and-characteristics-of-tsdbs" title="Direct link to heading">#</a></h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="time-series-data-explained"></a>Time-series data explained<a class="hash-link" href="#time-series-data-explained" title="Direct link to heading">#</a></h3><p>Time series is a succession of data points ordered by time. These data points
+could be a succession of events from an application’s users, the state of CPU
+and memory usage over time, financial trades recorded every microsecond, or
+sensors from a car emitting data about the vehicle acceleration and velocity.</p><p>For that reason, time-series is synonymous with large amounts of data. Unlike
+traditional databases in which older data entries are typically updated with the
+most recent data point to show the latest state, time-series databases (“TSDB”)
+continuously accumulate data points over time. This way, one can draw insights
+from the evolution of metrics over time to conclude meaningful insights from the
+data. Better yet is to predict future events through machine learning models
+based on historical time-series analysis.</p><figure><img alt="AAPL stock price over the last 5 years" class="image_Pw1y margin_Rc0b shadow_7z-4 title_f-p+" height="284" src="/img/blog/2020-11-26/apple.png" width="650"><figcaption class="caption_-tGK">Apple’s share price (daily) over the last 5 years: time-series data!</figcaption></figure><p>Time series databases were successfully adopted for use in financial
+applications (the world QuestDB’s team comes from) where storing and querying
+changes in stock, price, quantities and transactions over time is
+business-critical. With the rise in the number of connected devices, application
+monitoring and observability, time series data is proving to be critical in
+nearly all fields.</p><figure><img alt="Example of time-series data use cases" class="image_Pw1y margin_Rc0b shadow_7z-4 title_f-p+" height="327" src="/img/blog/2020-11-26/useCases.png" width="650"><figcaption class="caption_-tGK">Time-series data use cases</figcaption></figure><p>As a result, time series has been the fastest growing database category for the
+past two years according to
+<a href="https://db-engines.com/de/ranking/time+series+dbms" target="_blank" rel="noopener noreferrer">DB-engines</a>.</p><figure><img alt="Chart showing the popularity of time-series databases over the last 2 years - the data is from db-engines.com" class="image_Pw1y margin_Rc0b shadow_7z-4 title_f-p+" height="290" src="/img/blog/2020-11-26/popularity.png" width="650"><figcaption class="caption_-tGK">Popularity by database category</figcaption></figure><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="performance-is-the-pillar-of-a-time-series-database"></a>Performance is the pillar of a time-series database<a class="hash-link" href="#performance-is-the-pillar-of-a-time-series-database" title="Direct link to heading">#</a></h3><p>As use cases which generate data suitable for time series analysis are
+increasing exponentially, so is the amount of raw data itself. This means that
+TSDBs must be designed to handle exceptionally large volumes, specifically,
+performant ingestion (WRITE operations) is a cornerstone feature.</p><p>Time-series data is typically found in very demanding enterprise use cases where
+requirements for ingesting data are usually around a million data points per
+second. The ability to deal with multiple sources of data is also paramount.</p><p>For example, stock market events occurring on a microsecond (and nanosecond)
+frequency, or thousands of IoT sensors sending atmospheric data continuously
+from an offshore oil &amp; gas rig. Most importantly, enterprises expect databases
+to handle bursts of data which are high volumes of data incoming at irregular
+intervals. This is very common in financial markets, with spikes of trading
+volume occurring after events which are difficult to predict.</p><p>Once all of the data is stored into a database, most use cases require to query
+(READ operations) this data in real-time. Operations teams will need to see
+relevant metrics that show the state of application servers as soon as an
+anomaly is found. E-commerce websites need to analyze immense datasets of
+buyers’ behavior over time to gather new insights and optimize their stock in
+consequence. A fintech company will want to detect fraud as transactions occur.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="tsdbs-most-important-features-and-trade-offs"></a>TSDBs most important features and trade-offs<a class="hash-link" href="#tsdbs-most-important-features-and-trade-offs" title="Direct link to heading">#</a></h3><p>TSDBs are not optimized for OLTP workloads that typically include lots of
+regular updates and delete operations. Those are better handled by relational
+databases such as PostgreSQL, MySQL, SQL Server or Oracle.</p><p>In contrast, time-series data is mostly an append-only workload with delete
+operations performed in batches on less recent data. Typically, users are
+concerned the most about the recent data coming in that is being analyzed on the
+fly. We list some of the most interesting features of a time-series database.
+Further, we summarise how QuestDB addresses those needs.</p><ul><li><p><strong>Downsampling</strong></p><p>Representing the data with a lower frequency. For example, shifting from a
+daily view to a monthly view. This is typically done on the fly on a dashboard
+and requires very fast aggregation functions to be computed live. In order to
+facilitate such queries, QuestDB built a native extension to ANSI SQL with the
+function <a href="/docs/reference/sql/sample-by#examples">SAMPLE BY</a>. Note: our
+<a href="/blog/2020/10/19/grafana-tutorial">Grafana tutorial</a> shows downsampling examples.</p></li><li><p><strong>Interval search</strong></p><p>Fast retrieving data over arbitrary intervals. For example, zooming into a
+specific timeframe preceding a monitoring alert to better understand the
+underlying cause in real-time. QuestDB’s
+<a href="/docs/reference/sql/where#symbol-and-string">WHERE</a> clause for timestamp
+search is fast and efficient but requires a designated timestamp.</p></li><li><p><strong>Time series joins</strong></p><p>Align join time-series data from two different tables, which do not have
+exactly matching timestamps. QuestDB supports
+<a href="/docs/reference/sql/join#asof-join">ASOF</a> joins. QuestDB’s SQL query to
+match two tables (“bid” and “asks”) with unequal timestamps would look like:</p><figure><img alt="Example of an ASOF join query" class="image_Pw1y margin_Rc0b shadow_7z-4 title_f-p+" height="85" src="/img/blog/2020-11-26/asof.png" width="620"><figcaption class="caption_-tGK">Example of ASOF join query between the tables Bid and Ask</figcaption></figure></li><li><p><strong>Automated partitioning management</strong></p><p>Time partitions created automatically as data arrives. In QuestDB, data is
+stored in columns and partitioned by time. This makes it possible to access
+one specific column for a given time partition instead of lifting the entire
+table in memory, which is a computationally very intensive operation. We see
+this as a prerequisite for fast and efficient READS.</p></li><li><p><strong>Time-series ingestion protocols</strong></p><p>Being able to ingest unstructured time-series data succinctly is a must.
+QuestDB supports the
+<a href="/blog/2020/07/22/influxdb-lp-on-tcp">InfluxDB line protocol</a> that is the
+industry standard for observability use cases, with the ability to create new
+columns on the fly without specifying a schema ahead of time.</p></li><li><p><strong>Most recent first</strong></p><p>With time-series data, the most recent data is often more likely to be
+analyzed. Databases should be able to pull the latest record very fast,
+easily. QuestDB’s SQL language extension includes
+<a href="/docs/reference/sql/latest-on#examples">LATEST BY</a> to get the most recent
+view of a record instantly. As data is ingested in chronological order,
+QuestDB starts scanning from the bottom and can thus retrieve the data point
+very quickly.</p></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="part-2-why-we-set-out-to-build-questdb"></a>Part 2: Why we set out to build QuestDB<a class="hash-link" href="#part-2-why-we-set-out-to-build-questdb" title="Direct link to heading">#</a></h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="when-it-all-started-7-years-ago"></a>When it all started 7 years ago<a class="hash-link" href="#when-it-all-started-7-years-ago" title="Direct link to heading">#</a></h3><p>Our CTO worked in electronic trading, building systems for more than 10 years.
+In 2013, his boss would not allow him to use the only high-performance database
+suited to deal with time-series data because of its proprietary nature and
+price.</p><p>QuestDB was built with the intention of democratizing the performance that was
+only available for high-end enterprise applications, and to make the tooling
+available for every developer around the world leveraging an open source
+distribution model. Instead of writing a new querying language from scratch,
+QuestDB would facilitate adoption and accessibility via SQL rather than a new
+complex proprietary language.</p><p>We have heard a large number of companies complaining about the performance
+limitations of open source time-series databases. Most of those re-use existing
+libraries or are an extension of a well-known database which was not designed to
+process time-series data efficiently in the first place.</p><p>Instead, we chose an alternative route which took more than 7 years of R&amp;D. Our
+vision from day 1 was to challenge the norm and build software that uses new
+approaches and leverages the techniques learned in low-latency trading floors.
+An important aspect was to study and understand the evolution of hardware to
+build database software that could extract more performance from CPUs, memory,
+and modern hard disks.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="questdb-design-and-performance"></a>QuestDB design and performance<a class="hash-link" href="#questdb-design-and-performance" title="Direct link to heading">#</a></h3><p>QuestDB is built-in zero-GC Java and C++, and every single algorithm in the code
+base has been written from scratch with the goal of maximizing performance.</p><p>QuestDB’s data model (time-based arrays) differs from the LSM trees or B-trees
+based storage engines found in InfluxDB or TimescaleDB. It requires less
+overhead and data duplication while maintaining immediate consistency and
+persisting data on disk.</p><p>This linear data model structure massively optimises ingestion as it allows the
+database to slice data extremely efficiently in small chunks and process it all
+in parallel. QuestDB also saturates the network cards to process messages from
+several senders in parallel. Our ingestion is append only, with an order of
+complexity O(1); QuestDB does not rely on computively intense indices to reorder
+data as it hits the database. Out of order ingests are dealt with and re-ordered
+in memory before being persisted to disk.</p><p>QuestDB’s data layout enables CPUs to access data faster. With respect to
+queries, our codebase leverages modern CPU architecture with SIMD instructions
+to request that the same operation be performed on multiple data elements in
+parallel. We store data in columns and partition it by time in order to lift the
+minimal amount of data from disk for a given query.</p><figure><img alt="Architecture of the storage model with column files and time partitions" class="image_Pw1y margin_Rc0b shadow_7z-4 title_f-p+" height="323" src="/img/blog/2020-11-26/model.png" width="650"><figcaption class="caption_-tGK">Data stored in columns and partitioned by time</figcaption></figure><p>In order to showcase the capabilities of our database, we decided to put
+together an <a href="https://" target="_blank" rel="noopener noreferrer">online demo</a>, which features a 1.6 billion rows
+dataset with more than 10 years of NYC taxi and weather data (350GB). The
+hardware powering the demo is a c5.metal instance (AWS) with 24 physical cores
+and 192 GB of memory. The data is stored and accessed from disk, none of the
+results are cached or pre-calculated. The postmortem of QuestDB’s ShowHN on
+HackerNews can be found
+<a href="https://dzone.com/articles/we-put-a-sql-database-on-the-internet" target="_blank" rel="noopener noreferrer">on DZone</a>.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_WiXH" id="questdb-and-its-growing-community"></a>QuestDB and its growing community<a class="hash-link" href="#questdb-and-its-growing-community" title="Direct link to heading">#</a></h3><p>Pushing database performance higher and higher still while making it easy for
+developers to get started with our product is what motivates us every day. This
+is why we are focused on building a strong community of developers who can
+participate and improve the product through our open source distribution model.
+We hope to see you on our <a href="https://slack.questdb.io/" target="_blank" rel="noopener noreferrer">Slack</a> channel.</p></div><footer class="row margin-vert--lg"><div class="col"><strong>Tags:</strong><a class="margin-horiz--sm" href="/blog/tags/company">company</a><a class="margin-horiz--sm" href="/blog/tags/startup">startup</a><a class="margin-horiz--sm" href="/blog/tags/entrepreneurship">entrepreneurship</a><a class="margin-horiz--sm" href="/blog/tags/story">story</a></div></footer></article><div></div><div class="margin-vert--xl"><nav class="pagination-nav" aria-label="Blog post page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/blog/2020/12/10/garbage-free-stack-for-kafka-streams"><div class="pagination-nav__sublabel">Newer Post</div><div class="pagination-nav__label">« Building a garbage-free network stack for Kafka streams</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/blog/2020/11/16/http-server-contribution"><div class="pagination-nav__sublabel">Older Post</div><div class="pagination-nav__label">Community contribution from Alex Pelagenko improving our HTTP server »</div></a></div></nav></div></main></div></div><div class="root_0lLS"><div class="cards_xeZk"><div class="root_R798 skinPrimary_JHOH"><svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="38" cy="38" r="38" fill="#1E1F27"></circle><path d="M56.99 18.792a.817.817 0 00-.117-.303c-.01-.02-.02-.05-.03-.069-.01-.02-.029-.029-.048-.049a.912.912 0 00-.137-.136l-.117-.088c-.02-.01-.03-.03-.05-.04-.029-.01-.068-.029-.107-.039a.85.85 0 00-.146-.049 1.075 1.075 0 00-.176-.019h-.147a1.15 1.15 0 00-.196.049c-.029.01-.068.01-.097.02L12.59 36.67a.979.979 0 00-.509 1.29c.098.216.264.401.48.5l16.07 7.556v15.025c0 .537.44.977.978.977a.964.964 0 00.831-.469l6.794-11.046 10.499 5.533a.974.974 0 001.408-.655l7.84-36.2v-.058c.01-.058.01-.107.019-.156 0-.059 0-.117-.01-.176zM29.413 44.208L15.376 37.6l36.326-15.68-22.289 22.288zm1.174 13.363V47.004l4.917 2.59-4.917 7.977zm16.92-3.87l-9.237-4.86-1.662-1.026-.068.118-5.289-2.786 23.1-23.12L47.508 53.7z" fill="#fff"></path></svg><h3 class="title_BHe0">문의하기</h3><p class="description_Bwvi">이메일을 입력하시면 소개자료를 보내드립니다.</p><div class="content_gAr2"><form class="root_teCd"><div><div class="inputs_0wQ8"><input type="email" class="input_cjQx input_a6pP" name="email" required="" pattern="^[a-zA-Z0-9.!#$%&amp;&#x27;*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$" placeholder="Email address" title="Email address should be valid"><button class="submit_poRs button_f7Ff button--tertiary_vtfp button--uppercase_ESEN" type="submit">보내기</button></div></div></form></div></div></div></div></div><footer class="root_JnvJ"><div class="content_-gfC center_S24y"><img alt="QuestDB logo" class="logo_JrwJ" src="/img/navbar/tp_brand.png" width="108" height="27"><div class="tagline_T1tH"><p>인프라관리부터 서비스운영까지 클라우드환경에 최적화된 클라우드 네이티브 플랫폼</p></div><div class="links_1SgP"><div class="category_Ptbh"><span class="title_HpoE">Product</span><ul class="items_Lw7J"><li><a class="link_vx7p" href="/cloud/">Cloud</a></li><li><a class="link_vx7p" href="/enterprise/">Enterprise</a></li><li><a class="link_vx7p" href="/pricing/">Pricing</a></li><li><a class="link_vx7p" href="/use-cases/">Use Cases</a></li><li><a class="link_vx7p" href="/customers/">Customers</a></li><li><a class="link_vx7p" href="https://github.com/orgs/questdb/projects/1/views/5" rel="noopener noreferrer" target="_blank">Roadmap</a></li></ul></div><div class="category_Ptbh"><span class="title_HpoE">Developers</span><ul class="items_Lw7J"><li><a class="link_vx7p" href="/docs/">Docs</a></li><li><a class="link_vx7p" href="/blog/tags/tutorial/">Tutorials</a></li><li><a class="link_vx7p" href="/blog/">Blog</a></li><li><a class="link_vx7p" href="https://">Discussions</a></li><li><a class="link_vx7p" href="https://">Join Slack</a></li><li><a class="link_vx7p" href="/community/">Swag</a></li></ul></div><div class="category_Ptbh"><span class="title_HpoE">Company</span><ul class="items_Lw7J"><li><a class="link_vx7p" href="/about-us/">About us</a></li><li><a class="link_vx7p" href="/careers/">Careers</a></li></ul></div></div></div><div class="border_PW0V"><div class="bottom_wPs3 center_S24y">Copyright © 2023 Gitple. All rights are reserved.</div></div></footer></div>
+<script src="/assets/js/main.db1fdb94.js" defer="defer"></script>
+</body>
+</html>

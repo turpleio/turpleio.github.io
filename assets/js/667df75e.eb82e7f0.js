@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[2144],{83735:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"redpanda","name":"redpanda","count":1,"permalink":"/blog/tags/redpanda"}')}}]);

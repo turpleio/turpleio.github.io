@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[6974],{12725:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"python","name":"python","count":11,"permalink":"/blog/tags/python"}')}}]);

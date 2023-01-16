@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[4676],{37081:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"monitoring","name":"monitoring","count":2,"permalink":"/blog/tags/monitoring"}')}}]);

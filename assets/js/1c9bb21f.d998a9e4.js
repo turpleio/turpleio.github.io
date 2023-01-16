@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[9272],{58117:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"trading","name":"trading","count":4,"permalink":"/blog/tags/trading"}')}}]);

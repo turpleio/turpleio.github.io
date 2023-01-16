@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[8821],{28878:function(t){t.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"multithreading","name":"multithreading","count":1,"permalink":"/blog/tags/multithreading"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[3990],{21631:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"geospatial","name":"geospatial","count":2,"permalink":"/blog/tags/geospatial"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[6086],{69499:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"simd","name":"simd","count":1,"permalink":"/blog/tags/simd"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[9656],{46525:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"algotrading","name":"algotrading","count":1,"permalink":"/blog/tags/algotrading"}')}}]);
