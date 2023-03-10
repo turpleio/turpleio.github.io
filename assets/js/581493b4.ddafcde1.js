@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[5298],{88959:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"mindsdb","name":"mindsdb","count":1,"permalink":"/blog/tags/mindsdb"}')}}]);

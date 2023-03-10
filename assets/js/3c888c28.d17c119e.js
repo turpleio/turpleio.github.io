@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[5211],{20430:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"candlestick","name":"candlestick","count":1,"permalink":"/blog/tags/candlestick"}')}}]);

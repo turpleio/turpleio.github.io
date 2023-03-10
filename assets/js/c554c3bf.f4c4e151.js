@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[3552],{4494:function(l){l.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"plotly","name":"plotly","count":1,"permalink":"/blog/tags/plotly"}')}}]);

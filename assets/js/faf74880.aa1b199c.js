@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[8421],{12418:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"googlecloud","name":"googlecloud","count":2,"permalink":"/blog/tags/googlecloud"}')}}]);

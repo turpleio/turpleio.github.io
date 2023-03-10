@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[3518],{99440:function(t){t.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"matplotlib","name":"matplotlib","count":1,"permalink":"/blog/tags/matplotlib"}')}}]);

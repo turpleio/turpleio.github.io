@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[6582],{2855:function(u){u.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"multi-cloud","name":"multi-cloud","count":1,"permalink":"/blog/tags/multi-cloud"}')}}]);

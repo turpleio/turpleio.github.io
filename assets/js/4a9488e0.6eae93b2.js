@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[2058],{82850:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"funding","name":"funding","count":1,"permalink":"/blog/tags/funding"}')}}]);

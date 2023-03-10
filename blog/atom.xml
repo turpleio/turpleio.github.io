@@ -2,591 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://turpleio.github.io/blog</id>
     <title>Turple: Cloud Native Platform Blog</title>
-    <updated>2022-12-19T00:00:00.000Z</updated>
+    <updated>2023-03-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://turpleio.github.io/blog"/>
     <subtitle>Turple: Cloud Native Platform Blog</subtitle>
     <icon>https://turpleio.github.io/img/favicon.png</icon>
     <rights>Copyright © 2023 Gitple. All rights are reserved.</rights>
     <entry>
-        <title type="html"><![CDATA[Merry Questmas! Here are your gifts for 2023...]]></title>
-        <id>Merry Questmas! Here are your gifts for 2023...</id>
-        <link href="https://turpleio.github.io/blog/2022/12/19/merry-questmas-gifts-2023"/>
-        <updated>2022-12-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Season's greetings from the QuestDB team]]></summary>
+        <title type="html"><![CDATA[터플대시보드]]></title>
+        <id>터플대시보드</id>
+        <link href="https://turpleio.github.io/blog/2023/03/10/turple-dashboard"/>
+        <updated>2023-03-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Turple Dashboard]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Using Prometheus, Loki, and Grafana to monitor QuestDB in Kubernetes]]></title>
-        <id>Using Prometheus, Loki, and Grafana to monitor QuestDB in Kubernetes</id>
-        <link href="https://turpleio.github.io/blog/2022/12/13/using-prometheus-loki-grafana-monitor-questdb-kubernetes"/>
-        <updated>2022-12-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to monitor a QuestDB instance using Loki and Prometheus]]></summary>
+        <title type="html"><![CDATA[터플의 특징 - 데브옵스]]></title>
+        <id>터플의 특징 - 데브옵스</id>
+        <link href="https://turpleio.github.io/blog/2023/03/09/devops"/>
+        <updated>2023-03-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[About DevOps of Turple]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Listen to Your CPU - Full-table Scans Are Fast]]></title>
-        <id>Listen to Your CPU - Full-table Scans Are Fast</id>
-        <link href="https://turpleio.github.io/blog/2022/11/30/full-table-scan-are-fast"/>
-        <updated>2022-11-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Demonstrating the raw speed of modern hardware]]></summary>
+        <title type="html"><![CDATA[터플의 특징 - 멀티클라우드]]></title>
+        <id>터플의 특징 - 멀티클라우드</id>
+        <link href="https://turpleio.github.io/blog/2023/03/09/multi-cloud"/>
+        <updated>2023-03-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[About a multi cloud of Turple]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[QuestDB 6.6.1 - Dynamic Commits]]></title>
-        <id>QuestDB 6.6.1 - Dynamic Commits</id>
-        <link href="https://turpleio.github.io/blog/2022/11/25/questdb-6.6.1-dynamic-commits"/>
-        <updated>2022-11-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The detailed story of how QuestDB 6.6.1 increases data freshness]]></summary>
+        <title type="html"><![CDATA[터플의 특징 - 도커 & 쿠버네티스]]></title>
+        <id>터플의 특징 - 도커 &amp; 쿠버네티스</id>
+        <link href="https://turpleio.github.io/blog/2023/03/09/turple-docker-k8s"/>
+        <updated>2023-03-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Turple vs Docker vs kubernetes]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[SQL Extensions for Time Series Data in QuestDB - Part II]]></title>
-        <id>SQL Extensions for Time Series Data in QuestDB - Part II</id>
-        <link href="https://turpleio.github.io/blog/2022/11/23/sql-extensions-time-series-data-questdb-part-ii"/>
-        <updated>2022-11-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[SQL extensions for time series data in QuestDB part II]]></summary>
+        <title type="html"><![CDATA[왜 터플인가? Part 6 - 시장검증]]></title>
+        <id>왜 터플인가? Part 6 - 시장검증</id>
+        <link href="https://turpleio.github.io/blog/2023/03/06/why-turple-06"/>
+        <updated>2023-03-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why Turple? Part 6]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[QuestDB 6.5.5 Release]]></title>
-        <id>QuestDB 6.5.5 Release</id>
-        <link href="https://turpleio.github.io/blog/2022/11/14/questdb-release-6.5.5"/>
-        <updated>2022-11-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.5.4 release notes]]></summary>
+        <title type="html"><![CDATA[왜 터플인가? Part 5 - 가볍고 유연한 구조]]></title>
+        <id>왜 터플인가? Part 5 - 가볍고 유연한 구조</id>
+        <link href="https://turpleio.github.io/blog/2023/03/05/why-turple-05"/>
+        <updated>2023-03-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why Turple? Part 5]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[QuestDB at Devoxx Belgium 2022]]></title>
-        <id>QuestDB at Devoxx Belgium 2022</id>
-        <link href="https://turpleio.github.io/blog/2022/11/08/questdb-devoxx-belgium-2022"/>
-        <updated>2022-11-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[An overview of QuestDB's participation at Devoxx Belgium this year.]]></summary>
+        <title type="html"><![CDATA[왜 터플인가? Part 4 - 빠른 시스템 확장 (자동화)]]></title>
+        <id>왜 터플인가? Part 4 - 빠른 시스템 확장 (자동화)</id>
+        <link href="https://turpleio.github.io/blog/2023/03/04/why-turple-04"/>
+        <updated>2023-03-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why Turple? Part 4]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Data Lifecycle with QuestDB]]></title>
-        <id>Data Lifecycle with QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2022/11/02/data-lifecycle-questdb"/>
-        <updated>2022-11-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This tutorial shows ways to downsample data and detach or drop partitions when old data is no longer necessary using QuestDB.]]></summary>
+        <title type="html"><![CDATA[왜 터플인가? Part 3 - 멀티클라우드]]></title>
+        <id>왜 터플인가? Part 3 - 멀티클라우드</id>
+        <link href="https://turpleio.github.io/blog/2023/03/03/why-turple-03"/>
+        <updated>2023-03-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why Turple? Part 3]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[QuestDB 6.5.4 Release - Hacktoberfest]]></title>
-        <id>QuestDB 6.5.4 Release - Hacktoberfest</id>
-        <link href="https://turpleio.github.io/blog/2022/10/25/questdb-release-6.5.4"/>
-        <updated>2022-10-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.5.4 release notes]]></summary>
+        <title type="html"><![CDATA[왜 터플인가? Part 2 - 인프라 관리부터 어플리케이션 관리까지]]></title>
+        <id>왜 터플인가? Part 2 - 인프라 관리부터 어플리케이션 관리까지</id>
+        <link href="https://turpleio.github.io/blog/2023/03/02/why-turple-02"/>
+        <updated>2023-03-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why Turple? Part 2]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[QuestDB at Big Data LDN 2022]]></title>
-        <id>QuestDB at Big Data LDN 2022</id>
-        <link href="https://turpleio.github.io/blog/2022/10/20/questdb-big-data-ldn"/>
-        <updated>2022-10-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Big Data LDN (London) is the UK’s leading free to attend data & analytics conference and exhibition. This year, Javier Ramirez, Developer Advocate at QuestDB, delivered a talk on "Ingesting A Million Time Series Per Second On A Single Instance".]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DevStories #1: Time series for sports prediction markets]]></title>
-        <id>DevStories #1: Time series for sports prediction markets</id>
-        <link href="https://turpleio.github.io/blog/2022/10/03/athletex-interview"/>
-        <updated>2022-10-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is a brand-new series for which we interviewed different developers in our community. For the post of this series, we interviewed Kevin Kamto, Co-founder at AthleteX Markets.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Join Hacktoberfest 2022 and contribute to QuestDB!]]></title>
-        <id>Join Hacktoberfest 2022 and contribute to QuestDB!</id>
-        <link href="https://turpleio.github.io/blog/2022/09/30/hacktoberfest-questdb"/>
-        <updated>2022-09-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hacktoberfest 2022 is starting! We are super excited to meet with other open source contributors and maintainers. To celebrate this, we put together some hints for you to get started.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Importing 300k rows/sec with io_uring]]></title>
-        <id>Importing 300k rows/sec with io_uring</id>
-        <link href="https://turpleio.github.io/blog/2022/09/12/importing-300k-rows-with-io-uring"/>
-        <updated>2022-09-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.5 introduces a new `COPY` commands allowing importing large CSV files. This article reveals the story behind it and highlights the exciting benchmark results using this new SQL command.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using BIRCH for anomaly detection with QuestDB]]></title>
-        <id>Using BIRCH for anomaly detection with QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2022/08/22/using-birch-anomaly-detection-questdb"/>
-        <updated>2022-08-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to install BIRCH for anomaly detection with QuestDB]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 6.5 Release - CSV import]]></title>
-        <id>QuestDB 6.5 Release - CSV import</id>
-        <link href="https://turpleio.github.io/blog/2022/08/08/questdb-release-6.5"/>
-        <updated>2022-08-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.5 release notes]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Setting up Basic Authentication for QuestDB open source using Nginx]]></title>
-        <id>Setting up Basic Authentication for QuestDB open source using Nginx</id>
-        <link href="https://turpleio.github.io/blog/2022/08/05/setting-basic-auth-nginx"/>
-        <updated>2022-08-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to implement Nginx Basic Authentication for QuestDB open source.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Time Series Forecasting with TensorFlow and QuestDB]]></title>
-        <id>Time Series Forecasting with TensorFlow and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2022/06/20/forecasting-with-questdb-and-tensorflow"/>
-        <updated>2022-06-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Timeseries is a type of data used to train machine learning models. You may have numerical data for predicting housing prices or classification data for categorizing dog and cat breeds. It's also the special type of data used for training machine learning algorithms where time is the crucial component.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a Data Pipeline using QuestDB and Confluent Kafka]]></title>
-        <id>Building a Data Pipeline using QuestDB and Confluent Kafka</id>
-        <link href="https://turpleio.github.io/blog/2022/06/07/data-pipeline-with-kafka-and-questdb"/>
-        <updated>2022-06-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to collate data with Kafka and implement a data pipeline that collects real-time ETH market data and stores data to QuestDB through Kafka connections.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 6.4 Release Highlights]]></title>
-        <id>QuestDB 6.4 Release Highlights</id>
-        <link href="https://turpleio.github.io/blog/2022/05/31/questdb-release-6-4"/>
-        <updated>2022-05-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.4 Release Highlights]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[4Bn rows/sec query benchmark: Clickhouse vs QuestDB vs Timescale]]></title>
-        <id>4Bn rows/sec query benchmark: Clickhouse vs QuestDB vs Timescale</id>
-        <link href="https://turpleio.github.io/blog/2022/05/26/query-benchmark-questdb-versus-clickhouse-timescale"/>
-        <updated>2022-05-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.3 brings parallel filter execution optimization to our SQL engine allowing us to reduce both cold and hot query execution times quite dramatically.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to build a real-time crypto tracker with Redpanda and QuestDB]]></title>
-        <id>How to build a real-time crypto tracker with Redpanda and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2022/05/25/how-to-build-a-real-time-crypto-tracker-with-redpanda-and-questdb"/>
-        <updated>2022-05-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Analyze cryptocurrency price trends in real-time with Redpanda and store for further investigation in QuestDB. Read more]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Landscape of Timeseries Databases]]></title>
-        <id>The Landscape of Timeseries Databases</id>
-        <link href="https://turpleio.github.io/blog/2022/05/09/the-landscape-of-timeseries-databases"/>
-        <updated>2022-05-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A short survey of the timeseries databases of today.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 6.3 Release Highlights]]></title>
-        <id>QuestDB 6.3 Release Highlights</id>
-        <link href="https://turpleio.github.io/blog/2022/05/09/questdb-release-6-3"/>
-        <updated>2022-05-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.3 Release Highlights]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Time Series Data Analytics with QuestDB and Cube.js]]></title>
-        <id>Time Series Data Analytics with QuestDB and Cube.js</id>
-        <link href="https://turpleio.github.io/blog/2022/04/26/time-series-data-analytics-with-questdb-and-cube"/>
-        <updated>2022-04-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Time Series Data Analytics with QuestDB and Cube]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enabling Machine Learning in QuestDB with MindsDB]]></title>
-        <id>Enabling Machine Learning in QuestDB with MindsDB</id>
-        <link href="https://turpleio.github.io/blog/2022/04/18/enabling-machine-learning-in-questdb-with-mindsdb"/>
-        <updated>2022-04-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Combining both MindsDB and QuestDB gives you unbound prediction ability with SQL. Read more]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Demo of live crypto data streamed with QuestDB and Grafana]]></title>
-        <id>Demo of live crypto data streamed with QuestDB and Grafana</id>
-        <link href="https://turpleio.github.io/blog/2022/04/12/demo-live-crypto-data-streamed-with-questdb-and-grafana"/>
-        <updated>2022-04-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Demo of live crypto data streamed with QuestDB and Grafana]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Crypto Volume Profiles with QuestDB and Julia]]></title>
-        <id>Crypto Volume Profiles with QuestDB and Julia</id>
-        <link href="https://turpleio.github.io/blog/2022/03/29/crypto-volumes-julia-questdb"/>
-        <updated>2022-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Build Bitcoin volume curves using Julia and QuestDB to better understand the flow of trading throughout the day.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Visualizing cryptocurrency data with Python, Grafana and QuestDB]]></title>
-        <id>Visualizing cryptocurrency data with Python, Grafana and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2022/03/15/cryptocurrency-grafana-questdb"/>
-        <updated>2022-03-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Learn how to using Python to fetch cryptocurrency data from Coinbase, store it in QuestDB, and visualize the data using Grafana.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to generate time-series data in QuestDB]]></title>
-        <id>How to generate time-series data in QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2022/03/14/mock-sql-timeseries-data-questdb"/>
-        <updated>2022-03-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Learn how to mock timeseries data using built-in SQL functions in QuestDB to generate dummy data for testing and rapid prototyping according to your schemas.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Exploring Crypto Prices with QuestDB and Pandas]]></title>
-        <id>Exploring Crypto Prices with QuestDB and Pandas</id>
-        <link href="https://turpleio.github.io/blog/2022/03/08/questdb-crypto-pandas"/>
-        <updated>2022-03-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Visualizing historical prices of cryptocurrencies by ingesting data into QuestDB and analyzing trends with pandas, matplotlib, and seaborn. records on the fly.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Calling on our community members to help us support Ukraine]]></title>
-        <id>Calling on our community members to help us support Ukraine</id>
-        <link href="https://turpleio.github.io/blog/2022/03/07/calling-on-our-community-members"/>
-        <updated>2022-03-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We thank all our stakeholders, users and community members for your support during these challenging times.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Exploring cryptocurrency prices with QuestDB and Google Data Studio]]></title>
-        <id>Exploring cryptocurrency prices with QuestDB and Google Data Studio</id>
-        <link href="https://turpleio.github.io/blog/2022/02/10/questdb-google-data-studio"/>
-        <updated>2022-02-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Visualizing historical prices of Ethereum, Cardano, and Solana by ingesting data into QuestDB and graphing price trends on Google Data Studio. records on the fly.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Order Flow Imbalance - A High Frequency Trading Signal]]></title>
-        <id>Order Flow Imbalance - A High Frequency Trading Signal</id>
-        <link href="https://turpleio.github.io/blog/2022/02/02/order-flow-imbalance"/>
-        <updated>2022-02-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Calculate the order flow imbalance and build a high-frequency trading signal with the results. Read more]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 6.2 January release, SQL JIT compiler]]></title>
-        <id>QuestDB 6.2 January release, SQL JIT compiler</id>
-        <link href="https://turpleio.github.io/blog/2022/01/27/release-sql-jit-compiler"/>
-        <updated>2022-01-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We've released version 6.2 and here are the highlights including SQL JIT compiler, JDK 17 support, SQL and ILP improvements and autocomplete in the Web Console.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How we built a SIMD JIT compiler for SQL in QuestDB]]></title>
-        <id>How we built a SIMD JIT compiler for SQL in QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2022/01/12/jit-sql-compiler"/>
-        <updated>2022-01-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.2.0 brings a brand new JIT (Just-in-Time) compiler as a part of the SQL engine. This post describes our storage model, how we built a JIT compiler for SQL and our plans for improving it in future.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Our two-year journey to raise $15m in venture capital]]></title>
-        <id>Our two-year journey to raise $15m in venture capital</id>
-        <link href="https://turpleio.github.io/blog/2022/01/03/two-year-journey-raising-15m-venture-capital"/>
-        <updated>2022-01-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We've raised over $15 million in venture capital to fund development of the fastest open source time series database. This post describes our two-year journey to raising our $12.5m Series A, what we learned along the way, and the pitch deck we used.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 6.1.3 December release, Prometheus improvements]]></title>
-        <id>QuestDB 6.1.3 December release, Prometheus improvements</id>
-        <link href="https://turpleio.github.io/blog/2021/12/20/release-prometheus-alertmanager"/>
-        <updated>2021-12-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We've released version 6.1.3 and here's the highlights including Prometheus metrics, Prometheus Alertmanager support, SQL additions and Monaco Editor support.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Comparing InfluxDB and QuestDB databases]]></title>
-        <id>Comparing InfluxDB and QuestDB databases</id>
-        <link href="https://turpleio.github.io/blog/2021/11/29/questdb-versus-influxdb"/>
-        <updated>2021-11-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[An overview of InfluxDB versus QuestDB to compare features, functionality, performance, and ease of use.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A tour of high-frequency finance via the Julia language and QuestDB]]></title>
-        <id>A tour of high-frequency finance via the Julia language and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2021/11/22/high-frequency-finance-introduction-julia-lang"/>
-        <updated>2021-11-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Dean Markwick describes high-frequency finance concepts such as trade prices, financial returns, time series autocorrelation, empirical price impact and others via the Julia programming language.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why I joined QuestDB as a core database engineer]]></title>
-        <id>Why I joined QuestDB as a core database engineer</id>
-        <link href="https://turpleio.github.io/blog/2021/11/09/miguel-arregui-working-at-questdb"/>
-        <updated>2021-11-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The story of how Miguel Arregui joined as a software engineer building the fastest open source time series database.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How we built inter-thread messaging from scratch]]></title>
-        <id>How we built inter-thread messaging from scratch</id>
-        <link href="https://turpleio.github.io/blog/2021/11/03/interthread"/>
-        <updated>2021-11-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Detailed explanation of QuestDB's thread messaging system. A benchmark also shows the capabilities of this system.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Real-time stock price dashboard using QuestDB, Python and Plotly]]></title>
-        <id>Real-time stock price dashboard using QuestDB, Python and Plotly</id>
-        <link href="https://turpleio.github.io/blog/2021/11/01/plotly-finnhub-realtime-dashboard"/>
-        <updated>2021-11-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to schedule tasks in Python, store stock market data in QuestDB, and create beautiful real-time dashboards using Plotly and Dash.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Demo geospatial and timeseries queries on 250k unique devices]]></title>
-        <id>Demo geospatial and timeseries queries on 250k unique devices</id>
-        <link href="https://turpleio.github.io/blog/2021/10/04/geospatial-timeseries-demo"/>
-        <updated>2021-10-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We now support geospatial data in our time series database by adding geohashes to our type system along with language features to support common operations using this type.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Join Hacktoberfest 2021 and contribute to QuestDB!]]></title>
-        <id>Join Hacktoberfest 2021 and contribute to QuestDB!</id>
-        <link href="https://turpleio.github.io/blog/2021/10/01/hacktoberfest-questdb"/>
-        <updated>2021-10-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hacktoberfest 2021 is starting! We are super excited to meet with other open source contributors and maintainers. To celebrate this, we put together some hints for you to get started.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[High frequency finance with Julia and QuestDB]]></title>
-        <id>High frequency finance with Julia and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2021/09/17/high-frequency-finance-julia-lang"/>
-        <updated>2021-09-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Learn how to use QuestDB as a time series database for high-frequency trading, calculate the limit order book, price impact, trade sign distribution, and other concepts via the Julia programming language.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 6.0.5 September release, geospatial support]]></title>
-        <id>QuestDB 6.0.5 September release, geospatial support</id>
-        <link href="https://turpleio.github.io/blog/2021/09/13/release-6-0-5-geospatial-data"/>
-        <updated>2021-09-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.0.5 is available now and includes support for geospatial data with the introduction of geohash support for fast and efficient geodata queries and storage.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Launch a QuestDB droplet in 1-click via the DigitalOcean marketplace]]></title>
-        <id>Launch a QuestDB droplet in 1-click via the DigitalOcean marketplace</id>
-        <link href="https://turpleio.github.io/blog/2021/08/24/digitalocean-droplet"/>
-        <updated>2021-08-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB can now be launched on DigitalOcean via 1-Click apps which allows you to get started with a high-performance time series database on the cloud quickly and easily.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Comparing TimescaleDB and QuestDB timeseries databases]]></title>
-        <id>Comparing TimescaleDB and QuestDB timeseries databases</id>
-        <link href="https://turpleio.github.io/blog/2021/08/18/questdb-versus-timescaledb"/>
-        <updated>2021-08-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to use the Time Series Benchmark Suite to compare database read and write performance of QuestDB versus TimescaleDB.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 6.0.4 July release, Prometheus metrics support]]></title>
-        <id>QuestDB 6.0.4 July release, Prometheus metrics support</id>
-        <link href="https://turpleio.github.io/blog/2021/07/16/release-6-0-4-prometheus-metrics"/>
-        <updated>2021-07-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB 6.0.4 is available now with highlights such as performance improvements, increased parallelization of existing code, calendar alignment for `SAMPLE BY` queries, and a new Prometheus endpoint.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Telegraf and QuestDB to store metrics in a time series database]]></title>
-        <id>Using Telegraf and QuestDB to store metrics in a time series database</id>
-        <link href="https://turpleio.github.io/blog/2021/07/09/telegraf-and-questdb-for-storing-metrics-in-a-timeseries-database"/>
-        <updated>2021-07-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to use the Telegraf agent to collect system metrics from DigitalOcean droplets, store the metrics in QuestDB, and perform basic data visualization and SQL queries using a time series database.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Comparing InfluxDB, TimescaleDB, and QuestDB timeseries databases]]></title>
-        <id>Comparing InfluxDB, TimescaleDB, and QuestDB timeseries databases</id>
-        <link href="https://turpleio.github.io/blog/2021/07/05/comparing-questdb-timescaledb-influxdb"/>
-        <updated>2021-07-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A high-level overview of timeseries databases to compare features, functionality, maturity, and performance.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tracking multiple cryptocurrency exchanges using a time series database]]></title>
-        <id>Tracking multiple cryptocurrency exchanges using a time series database</id>
-        <link href="https://turpleio.github.io/blog/2021/06/18/tracking-multiple-cryptocurrency-exchanges"/>
-        <updated>2021-06-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Leveraging QuestDB’s data ingestion via InfluxDB line protocol to build a high-throughput cryptocurrency price tracker capable of handling out-of-order records on the fly.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How databases handle 10 million devices in high-cardinality benchmarks]]></title>
-        <id>How databases handle 10 million devices in high-cardinality benchmarks</id>
-        <link href="https://turpleio.github.io/blog/2021/06/16/high-cardinality-time-series-data-performance"/>
-        <updated>2021-06-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Most open source time series databases struggle with high-cardinality time series data. Learn more about high-cardinality and how to benchmark database performance with this type of data.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How we achieved write speeds of 1.4 million rows per second]]></title>
-        <id>How we achieved write speeds of 1.4 million rows per second</id>
-        <link href="https://turpleio.github.io/blog/2021/05/10/questdb-release-6-0-tsbs-benchmark"/>
-        <updated>2021-05-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Our new ingestion framework can sort time series data before writing to disk. Here's how we built it and how it compares to InfluxDB, ClickHouse, and TimescaleDB.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB version 6.0 alpha]]></title>
-        <id>QuestDB version 6.0 alpha</id>
-        <link href="https://turpleio.github.io/blog/2021/04/20/questdb-release-6-0-alpha"/>
-        <updated>2021-04-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[An alpha version for QuestDB version 6.0 is available now to test with highlights such as out-of-order support, improved InfluxDB Line Protocol ingestion and multiple fixes and improvements]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Streaming on-chain Ethereum data to QuestDB]]></title>
-        <id>Streaming on-chain Ethereum data to QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2021/04/12/stream-ethereum-data"/>
-        <updated>2021-04-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Learn how to use Infura, Blockchain ETL, and QuestDB to stream Ethereum data to a time series database for visualization and analysis.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Automating ETL jobs on time series data with QuestDB on Google Cloud Platform]]></title>
-        <id>Automating ETL jobs on time series data with QuestDB on Google Cloud Platform</id>
-        <link href="https://turpleio.github.io/blog/2021/03/31/automating-etl-jobs-on-time-series-data-on-gcp"/>
-        <updated>2021-03-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Learn how to build an ETL job using Cloud Functions to extract data, remove personally-identifiable information, and load the transformed time series data into QuestDB.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Running QuestDB and Prometheus on GKE Autopilot]]></title>
-        <id>Running QuestDB and Prometheus on GKE Autopilot</id>
-        <link href="https://turpleio.github.io/blog/2021/03/18/questdb-and-prometheus-on-gke-autopilot"/>
-        <updated>2021-03-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Learn how Google Kubernetes Engine in Autopilot can run QuestDB and Prometheus with automated backups for a production-ready time series database deployment.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Real-time stock price alerts using Python, Grafana and QuestDB]]></title>
-        <id>Real-time stock price alerts using Python, Grafana and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2021/03/09/realtime-stock-alerts-python-grafana-questdb"/>
-        <updated>2021-03-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Use Python to query stock prices via REST API, stream the results to QuestDB, and configure Slack alerts based on changes in time series data using Grafana.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Realtime crypto tracker with Kafka and QuestDB]]></title>
-        <id>Realtime crypto tracker with Kafka and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2021/02/18/realtime-crypto-tracker-with-kafka-and-questdb"/>
-        <updated>2021-02-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Use Python to send real-time cryptocurrency metrics to Kafka topics, ingest to QuestDB, and calculate moving averages with Pandas.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB 5.0.6 Release Highlights, January 2021]]></title>
-        <id>QuestDB 5.0.6 Release Highlights, January 2021</id>
-        <link href="https://turpleio.github.io/blog/2021/02/05/questdb-release-5-0-6-postgres-wire"/>
-        <updated>2021-02-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We've released version 5.0.6 and here's the highlights including PostgreSQL wire improvements, SQL additions and new functions for troubleshooting]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Stream heart rate data into QuestDB via Google IoT Core]]></title>
-        <id>Stream heart rate data into QuestDB via Google IoT Core</id>
-        <link href="https://turpleio.github.io/blog/2021/02/05/streaming-heart-rate-data-with-iot-core-and-questdb"/>
-        <updated>2021-02-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[An end-to-end demo of a simple IoT system to stream and visualize heart rate data in Grafana via Google Cloud Platform]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A low-code bitcoin ticker built with QuestDB and n8n.io]]></title>
-        <id>A low-code bitcoin ticker built with QuestDB and n8n.io</id>
-        <link href="https://turpleio.github.io/blog/2021/01/18/low-code-bitcoin-ticker-workflow-with-time-series-database"/>
-        <updated>2021-01-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This tutorial shows how to build a bitcoin ticker for ingesting real-time data into QuestDB using n8n.io]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Monitoring the uptime of an application with Python, Nuxt.js and QuestDB]]></title>
-        <id>Monitoring the uptime of an application with Python, Nuxt.js and QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2021/01/13/application-uptime-monitoring-with-python-nuxtjs-questdb"/>
-        <updated>2021-01-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This detailed tutorial shows how to use QuestDB in a robust application status page and includes a repository with the example code ready to deploy.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SQL Extensions for Time-Series Data in QuestDB]]></title>
-        <id>SQL Extensions for Time-Series Data in QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2021/01/11/sql-extensions-for-timeseries-data"/>
-        <updated>2021-01-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A short hands-on tutorial on how to use SQL extensions built for time-series data in QuestDB]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a garbage-free network stack for Kafka streams]]></title>
-        <id>Building a garbage-free network stack for Kafka streams</id>
-        <link href="https://turpleio.github.io/blog/2020/12/10/garbage-free-stack-for-kafka-streams"/>
-        <updated>2020-12-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Our database's network stack handles multiple TCP connections on a single thread without garbage collection for reliably ingesting time series data.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What is time-series data, and why are we building a time-series database (TSDB)?]]></title>
-        <id>What is time-series data, and why are we building a time-series database (TSDB)?</id>
-        <link href="https://turpleio.github.io/blog/2020/11/26/why-timeseries-data"/>
-        <updated>2020-11-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A primer on time-series data and time-series databases (TSDB), and why we decided to build QuestDB]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Community contribution from Alex Pelagenko improving our HTTP server]]></title>
-        <id>Community contribution from Alex Pelagenko improving our HTTP server</id>
-        <link href="https://turpleio.github.io/blog/2020/11/16/http-server-contribution"/>
-        <updated>2020-11-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[One of QuestDB’s major contributors, Alex Pelagenko, shares his experience on improving QuestDB’s HTTP server.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Authentication for InfluxDB line protocol]]></title>
-        <id>Authentication for InfluxDB line protocol</id>
-        <link href="https://turpleio.github.io/blog/2020/10/20/authentication-for-influx-line-protocol"/>
-        <updated>2020-10-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QuestDB has added authentication for InfluxDB line protocol over TCP]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build a monitoring dashboard with QuestDB and Grafana]]></title>
-        <id>Build a monitoring dashboard with QuestDB and Grafana</id>
-        <link href="https://turpleio.github.io/blog/2020/10/19/grafana-tutorial"/>
-        <updated>2020-10-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Use Grafana with QuestDB to build a monitoring dashboard for visualization of time series data.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NYC taxi meter and options pricing]]></title>
-        <id>NYC taxi meter and options pricing</id>
-        <link href="https://turpleio.github.io/blog/2020/10/16/taxi-drivers-are-options-traders"/>
-        <updated>2020-10-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[An experiment analyzing the NYC taxi dataset through the eyes of an options trader.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why performance matters in time-series data]]></title>
-        <id>Why performance matters in time-series data</id>
-        <link href="https://turpleio.github.io/blog/2020/09/24/why-performance-matters"/>
-        <updated>2020-09-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Thoughts on why speed and performance are crucial to time series database ingestion and analytics.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Lightweight, blazing fast stack for your IoT application]]></title>
-        <id>A Lightweight, blazing fast stack for your IoT application</id>
-        <link href="https://turpleio.github.io/blog/2020/08/25/fast-iot-stack-with-questdb-mqtt"/>
-        <updated>2020-08-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to create a simple IoT stack that uses a Mosquitto MQTT Broker, Telegraf and QuestDB.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Re-examining our approach to memory mapping]]></title>
-        <id>Re-examining our approach to memory mapping</id>
-        <link href="https://turpleio.github.io/blog/2020/08/19/memory-mapping-deep-dive"/>
-        <updated>2020-08-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What we learned by re-examining our approach to memory mapping. A low level implementation, as close as posibble to the kernel, enabled even greater performance.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[My journey making QuestDB]]></title>
-        <id>My journey making QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2020/08/06/my-journey-writing-questdb"/>
-        <updated>2020-08-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The detailed story of how the open source time series database QuestDB came to life.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QuestDB swag for our community members!]]></title>
-        <id>QuestDB swag for our community members!</id>
-        <link href="https://turpleio.github.io/blog/2020/07/24/use-questdb-for-swag"/>
-        <updated>2020-07-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Participate to the QuestDB community and get rewarded with swag for your contributions.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[InfluxDB line protocol on QuestDB]]></title>
-        <id>InfluxDB line protocol on QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2020/07/22/influxdb-lp-on-tcp"/>
-        <updated>2020-07-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This tutorial shows an example IoT application using InfluxDB line protocol with QuestDB.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Demo launch on HackerNews retrospective]]></title>
-        <id>Demo launch on HackerNews retrospective</id>
-        <link href="https://turpleio.github.io/blog/2020/07/01/we-put-a-sql-database-on-the-internet"/>
-        <updated>2020-07-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What happens when you put a SQL database on the internet? Demo launch on HackerNews retrospective.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Querying data in a Jupyter Notebook]]></title>
-        <id>Querying data in a Jupyter Notebook</id>
-        <link href="https://turpleio.github.io/blog/2020/06/15/python-questdb-tutorial"/>
-        <updated>2020-06-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Use a Jupyter notebook to create a database, insert and query data and graph the results using Python.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sending IoT sensor data from Arduino to QuestDB]]></title>
-        <id>Sending IoT sensor data from Arduino to QuestDB</id>
-        <link href="https://turpleio.github.io/blog/2020/06/05/iot-on-questdb"/>
-        <updated>2020-06-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[See how to build an IoT application using Arduino, which sends temperature and humidity sensor data to QuestDB.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Things we learned about sums]]></title>
-        <id>Things we learned about sums</id>
-        <link href="https://turpleio.github.io/blog/2020/05/12/interesting-things-we-learned-about-sums"/>
-        <updated>2020-05-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What we learned implementing Kahan and Neumaier compensated sum algorithms, benchmark and comparison with Clickhouse.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Aggregating billions of rows per second with SIMD]]></title>
-        <id>Aggregating billions of rows per second with SIMD</id>
-        <link href="https://turpleio.github.io/blog/2020/04/02/using-simd-to-aggregate-billions-of-rows-per-second"/>
-        <updated>2020-04-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How SIMD instructions make aggregations faster in QuestDB, including benchmark results and a comparison with Postgres.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Speeding up InfluxDB line protocol]]></title>
-        <id>Speeding up InfluxDB line protocol</id>
-        <link href="https://turpleio.github.io/blog/2019/12/19/lineprot"/>
-        <updated>2019-12-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Comparison between InfluxDB and QuestDB regarding the performance of the line protocol when ingesting data.]]></summary>
+        <title type="html"><![CDATA[왜 터플인가? Part 1 - 빠른 클라우드 기술 도입]]></title>
+        <id>왜 터플인가? Part 1 - 빠른 클라우드 기술 도입</id>
+        <link href="https://turpleio.github.io/blog/2023/03/01/why-turple-01"/>
+        <updated>2023-03-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why Turple? Part 1]]></summary>
     </entry>
 </feed>

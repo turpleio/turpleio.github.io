@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[6090],{56010:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"cube-js","name":"cube.js","count":1,"permalink":"/blog/tags/cube-js"}')}}]);

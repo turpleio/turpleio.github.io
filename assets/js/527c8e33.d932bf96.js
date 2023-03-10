@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[6795],{70245:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"database","name":"database","count":3,"permalink":"/blog/tags/database"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[4556],{38133:function(c){c.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"cryptocurrency","name":"cryptocurrency","count":2,"permalink":"/blog/tags/cryptocurrency"}')}}]);

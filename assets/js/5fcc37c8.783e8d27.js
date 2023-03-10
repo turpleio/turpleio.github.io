@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[930],{7761:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"data-science","name":"data science","count":5,"permalink":"/blog/tags/data-science"}')}}]);

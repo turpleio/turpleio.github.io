@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[9869],{6707:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"why-turple","name":"why-turple","count":6,"permalink":"/blog/tags/why-turple"}')}}]);

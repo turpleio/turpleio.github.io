@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[6935],{53573:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"market-data","name":"market data","count":11,"permalink":"/blog/tags/market-data"}')}}]);

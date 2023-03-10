@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquestdb_io=self.webpackChunkquestdb_io||[]).push([[4946],{35800:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"retrospective","name":"retrospective","count":1,"permalink":"/blog/tags/retrospective"}')}}]);
